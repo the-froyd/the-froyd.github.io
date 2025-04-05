@@ -1,138 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FROYD | Visionário</title>
+  <title>The Froyd | Portfólio Visionário</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
-      color: #ffffff;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #fff;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
-
     header {
+      background-image: url('FROYD.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 60px 20px 20px;
     }
-
-    header img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-    }
-
-    h1 {
+    header h1 {
       font-size: 3rem;
-      margin-top: 20px;
-      animation: fadeInDown 1s ease-out;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 12px;
+      animation: fadeInDown 2s ease;
     }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      color: #e6e6e6;
-      border-left: 5px solid #a98bff;
-      padding-left: 15px;
-      margin-bottom: 15px;
-    }
-
-    p, li {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: #ccc;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: #a98bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: #888;
-    }
-
     @keyframes fadeInDown {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #eaeaea;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #d0d0d0;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 25px;
+      background: #1a73e8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #0b52c5;
+    }
+    .divider {
+      height: 2px;
+      background: #333;
+      margin: 40px 0;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="FROYD.jpg" alt="Banner Froyd">
-    <h1>FROYD • Rafael Gomes Ferraz</h1>
+    <h1>THE FROYD</h1>
   </header>
 
   <section>
     <h2>Sobre Mim</h2>
-    <p>Sou Rafael Gomes Ferraz, também conhecido como Froyd — visionário, criador e estrategista por trás do <strong>VibEazy Online</strong> e da <strong>Nexus Group</strong>. Com experiência sólida em design gráfico e amplo estudo autodidata em linguagens de programação, também sou certificado em administração, gestão de projetos e empreendedorismo. Tenho um perfil altamente comunicativo, estratégico e focado em inovação com impacto real.</p>
-    <p>Atuo como mente criativa e gestora dos projetos que estão transformando o cenário dos games online e da comunidade de desenvolvedores no Brasil. Cada linha de código e cada decisão de design têm um propósito: criar experiências únicas, profissionais e visionárias.</p>
+    <p>Sou Rafael Gomes Ferraz, conhecido como Froyd — fundador do VibEazy Online e da Nexus Group. Desenvolvedor, designer gráfico, comunicador nato e estrategista visionário. Estudo profundamente linguagens de programação e tenho certificações em administração e gestão empresarial. Minha abordagem une lógica, estética e impacto.</p>
+    <p>Minhas criações são voltadas para inovação extrema, estrutura profissional e influência real no cenário digital.</p>
+    <a class="button" href="mailto:rafaelgomesferraz0@gmail.com">Contato Pessoal</a>
   </section>
+
+  <div class="divider"></div>
 
   <section>
-    <h2>🚀 VibEazy Online</h2>
-    <p>Servidor de <strong>GTA SA-MP/OpenMP Roleplay</strong> com uma proposta revolucionária. Foco total no mobile, com:</p>
-    <ul>
-      <li>Spawn diferenciado e intuitivo</li>
-      <li>Economia realista com transações por dinheiro real</li>
-      <li>Missões, pets, redes sociais internas, rádio e muito mais</li>
-      <li>Eventos com prêmios em dinheiro real, casas VIPs e empresas</li>
-      <li>Administração profissional com divisão clara de funções</li>
-    </ul>
-    <p><strong>Comunidade:</strong> <a href="https://discord.gg/k9fmTJr7HD" target="_blank">discord.gg/k9fmTJr7HD</a></p>
+    <h2>VibEazy Online</h2>
+    <p>O VibEazy Online é mais que um servidor de GTA RP. É uma experiência. Com spawn diferenciado, economia realista, missões, pets, rede social interna e integração com dinheiro real — criamos uma cidade virtual única, voltada especialmente para jogadores mobile.</p>
+    <p>Durante os eventos de lançamento, oferecemos prêmios como R$100 no Pix, veículos VIP, casas, moedas Eazy Coins, mansões e muito mais. Nosso objetivo é atingir 2.500 membros ativos e consolidar o servidor como um dos mais inovadores do Brasil.</p>
+    <a class="button" href="https://discord.gg/k9fmTJr7HD" target="_blank">Entrar na Comunidade do VibEazy</a>
+    <a class="button" href="mailto:contatovibeazycity@gmail.com">Email Comercial</a>
   </section>
+
+  <div class="divider"></div>
 
   <section>
-    <h2>🏛️ Nexus Group</h2>
-    <p>Hub empresarial e comunidade oficial para desenvolvedores, com estrutura profissional, organização empresarial e foco em:</p>
-    <ul>
-      <li>Conexão entre talentos e projetos</li>
-      <li>Desenvolvimento de novos servidores e jogos</li>
-      <li>Suporte a projetos externos vinculados à marca</li>
-      <li>Documentação, portfólios, parcerias e networking estratégico</li>
-    </ul>
-    <p><strong>Comunidade:</strong> <a href="https://discord.gg/YXvX62YzGQ" target="_blank">discord.gg/YXvX62YzGQ</a></p>
+    <h2>Nexus Group</h2>
+    <p>A Nexus Group é um hub empresarial para desenvolvedores, artistas e criadores digitais. Nossa estrutura profissional conecta talentos, gerencia projetos e centraliza inovações. Todos os projetos futuros — como DayZ, MTA, Minecraft, Roblox e mais — estarão conectados à Nexus.</p>
+    <p>Nosso Discord é uma plataforma organizada para networking, colaborações, negócios e expansão estratégica. Se você quer fazer parte de algo grande, aqui é o seu lugar.</p>
+    <a class="button" href="https://discord.gg/YXvX62YzGQ" target="_blank">Entrar na Comunidade Nexus</a>
+    <a class="button" href="mailto:contatonexusgroup@gmail.com">Email Profissional Nexus</a>
   </section>
+
+  <div class="divider"></div>
 
   <section>
-    <h2>📞 Contato Profissional</h2>
-    <p>Para conversar comigo, você precisa entrar em uma das comunidades oficiais:</p>
-    <ul>
-      <li>Abra um ticket em <a href="https://discord.gg/k9fmTJr7HD" target="_blank">VibEazy Online</a> ou <a href="https://discord.gg/YXvX62YzGQ" target="_blank">Nexus Group</a></li>
-      <li>Marque uma reunião via chamada de voz</li>
-    </ul>
-    <p>Contatos por e-mail:</p>
-    <ul>
-      <li><strong>Email pessoal:</strong> <a href="mailto:rafaelgomesferraz0@gmail.com">rafaelgomesferraz0@gmail.com</a></li>
-      <li><strong>VibEazy Online:</strong> <a href="mailto:contatovibeazycity@gmail.com">contatovibeazycity@gmail.com</a></li>
-      <li><strong>Nexus Group:</strong> <a href="mailto:contatonexusgroup@gmail.com">contatonexusgroup@gmail.com</a></li>
-    </ul>
+    <h2>Como Falar Comigo</h2>
+    <p>Quer conversar comigo diretamente? Abra um ticket em uma das comunidades oficiais (VibEazy ou Nexus) e agende uma reunião via call. Toda conversa é profissional, clara e objetiva. Meu tempo é valioso, e o seu também. Se deseja algo grande, vamos conversar direito.</p>
+    <a class="button" href="mailto:rafaelgomesferraz0@gmail.com">Me Chame por Email</a>
   </section>
-
-  <footer>
-    <p>© 2025 Froyd. Todos os direitos reservados. Construído com paixão, propósito e estratégia.</p>
-  </footer>
 </body>
-
 </html>
