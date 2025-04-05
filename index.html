@@ -1,128 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Froyd | Visionário</title>
+  <title>FROYD | Visionário</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
-      color: #f0f0f0;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
       overflow-x: hidden;
     }
+
     header {
-      background: url('FROYD.jpg') no-repeat center center;
-      background-size: cover;
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
+      padding: 60px 20px 20px;
     }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    h1, h2 {
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #fff;
+
+    h2 {
+      font-size: 2rem;
+      color: #e6e6e6;
+      border-left: 5px solid #a98bff;
+      padding-left: 15px;
+      margin-bottom: 15px;
     }
-    p {
-      line-height: 1.7;
+
+    p, li {
       font-size: 1.1rem;
+      line-height: 1.7;
       color: #ccc;
     }
-    .divider {
-      height: 2px;
-      background: linear-gradient(to right, #fff, transparent);
-      margin: 60px auto;
-      width: 60%;
+
+    ul {
+      padding-left: 20px;
     }
-    .highlight {
-      color: #00e0d6;
-      font-weight: bold;
-    }
-    .link-button {
-      background: #00e0d6;
-      color: #0f0f0f;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      margin-top: 20px;
-      display: inline-block;
+
+    a {
+      color: #a98bff;
       text-decoration: none;
-      transition: 0.3s;
     }
-    .link-button:hover {
-      background: #00b8a8;
+
+    a:hover {
+      text-decoration: underline;
     }
+
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
       color: #888;
-      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
+
 <body>
-  <header></header>
+  <header>
+    <img src="FROYD.jpg" alt="Banner Froyd">
+    <h1>FROYD • Rafael Gomes Ferraz</h1>
+  </header>
 
   <section>
-    <h1>Quem é o <span class="highlight">Froyd</span>?</h1>
-    <p>Froyd é mais do que um nome. É uma mente criativa por trás do <strong>VibEazy Online</strong> e do <strong>Nexus Group</strong>, dois dos projetos mais ousados e inovadores no universo dos jogos e tecnologia. Estratégico, reservado e visionário, ele é movido por uma vontade inabalável de criar um ecossistema digital onde ideias se tornam revoluções.</p>
+    <h2>Sobre Mim</h2>
+    <p>Sou Rafael Gomes Ferraz, também conhecido como Froyd — visionário, criador e estrategista por trás do <strong>VibEazy Online</strong> e da <strong>Nexus Group</strong>. Com experiência sólida em design gráfico e amplo estudo autodidata em linguagens de programação, também sou certificado em administração, gestão de projetos e empreendedorismo. Tenho um perfil altamente comunicativo, estratégico e focado em inovação com impacto real.</p>
+    <p>Atuo como mente criativa e gestora dos projetos que estão transformando o cenário dos games online e da comunidade de desenvolvedores no Brasil. Cada linha de código e cada decisão de design têm um propósito: criar experiências únicas, profissionais e visionárias.</p>
   </section>
 
-  <div class="divider"></div>
-
   <section>
-    <h2>🎮 VibEazy Online</h2>
-    <p>O <strong>VibEazy Online</strong> é um servidor de <span class="highlight">GTA RP</span> que redefine o conceito de roleplay. Focado no público mobile, com <strong>economia realista</strong>, sistema de <strong>moeda real</strong> com taxa empresarial, <strong>spawn intuitivo</strong>, e recursos exclusivos como:</p>
+    <h2>🚀 VibEazy Online</h2>
+    <p>Servidor de <strong>GTA SA-MP/OpenMP Roleplay</strong> com uma proposta revolucionária. Foco total no mobile, com:</p>
     <ul>
-      <li>🐾 Pets e rede social interna</li>
-      <li>📻 Rádio e interações sociais de verdade</li>
-      <li>📌 Missões dinâmicas que geram conexões</li>
+      <li>Spawn diferenciado e intuitivo</li>
+      <li>Economia realista com transações por dinheiro real</li>
+      <li>Missões, pets, redes sociais internas, rádio e muito mais</li>
+      <li>Eventos com prêmios em dinheiro real, casas VIPs e empresas</li>
+      <li>Administração profissional com divisão clara de funções</li>
     </ul>
-    <br>
-    <a href="https://discord.gg/seulinkvibeazy" target="_blank" class="link-button">Entrar na Comunidade</a>
+    <p><strong>Comunidade:</strong> <a href="https://discord.gg/k9fmTJr7HD" target="_blank">discord.gg/k9fmTJr7HD</a></p>
   </section>
 
-  <div class="divider"></div>
-
   <section>
-    <h2>💼 Nexus Group</h2>
-    <p>A <strong>Nexus Group</strong> é o centro de tudo. Um <span class="highlight">hub profissional</span> para desenvolvedores e projetos digitais. Aqui, todos os projetos ganham estrutura, visibilidade e conexões. Seja você iniciante ou experiente, esse é o espaço onde seu projeto não só nasce, ele evolui.</p>
+    <h2>🏛️ Nexus Group</h2>
+    <p>Hub empresarial e comunidade oficial para desenvolvedores, com estrutura profissional, organização empresarial e foco em:</p>
     <ul>
-      <li>📁 Projetos documentados e organizados</li>
-      <li>🤝 Parcerias, networking e visibilidade real</li>
-      <li>🧠 Troca de conhecimento entre mentes afiadísimas</li>
+      <li>Conexão entre talentos e projetos</li>
+      <li>Desenvolvimento de novos servidores e jogos</li>
+      <li>Suporte a projetos externos vinculados à marca</li>
+      <li>Documentação, portfólios, parcerias e networking estratégico</li>
     </ul>
-    <br>
-    <a href="https://discord.gg/seulinknexus" target="_blank" class="link-button">Acessar o Hub Nexus</a>
+    <p><strong>Comunidade:</strong> <a href="https://discord.gg/YXvX62YzGQ" target="_blank">discord.gg/YXvX62YzGQ</a></p>
   </section>
 
-  <div class="divider"></div>
-
   <section>
-    <h2>📬 Contato</h2>
-    <p>Quer falar diretamente comigo ou com a equipe? Seja para parcerias, ideias ou projetos em conjunto:</p>
+    <h2>📞 Contato Profissional</h2>
+    <p>Para conversar comigo, você precisa entrar em uma das comunidades oficiais:</p>
     <ul>
-      <li>Email: <strong>contato@nexusgroup.com</strong></li>
-      <li>Discord: <strong>@froyd</strong></li>
+      <li>Abra um ticket em <a href="https://discord.gg/k9fmTJr7HD" target="_blank">VibEazy Online</a> ou <a href="https://discord.gg/YXvX62YzGQ" target="_blank">Nexus Group</a></li>
+      <li>Marque uma reunião via chamada de voz</li>
+    </ul>
+    <p>Contatos por e-mail:</p>
+    <ul>
+      <li><strong>Email pessoal:</strong> <a href="mailto:rafaelgomesferraz0@gmail.com">rafaelgomesferraz0@gmail.com</a></li>
+      <li><strong>VibEazy Online:</strong> <a href="mailto:contatovibeazycity@gmail.com">contatovibeazycity@gmail.com</a></li>
+      <li><strong>Nexus Group:</strong> <a href="mailto:contatonexusgroup@gmail.com">contatonexusgroup@gmail.com</a></li>
     </ul>
   </section>
 
   <footer>
-    Desenvolvido com raça e visão por Froyd — Todos os direitos reservados. <br>
-    "Ideias comuns não constroem legados extraordinários."
+    <p>© 2025 Froyd. Todos os direitos reservados. Construído com paixão, propósito e estratégia.</p>
   </footer>
 </body>
+
 </html>
