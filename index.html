@@ -54,7 +54,7 @@
     }
 
     section h2 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       color: #00ffe7;
       margin-bottom: 25px;
       font-family: 'Orbitron', sans-serif;
@@ -95,26 +95,35 @@
     .card {
       background-color: #1a1a1a;
       border-radius: 16px;
-      padding: 25px;
-      box-shadow: 0 0 20px rgba(0, 255, 231, 0.1);
+      padding: 35px;
+      box-shadow: 0 0 30px rgba(0, 255, 231, 0.15);
       transition: 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+      box-shadow: 0 0 50px rgba(0, 255, 231, 0.4);
     }
 
     .logo-container {
-      text-align: center;
-      margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      margin: 60px auto;
+      animation: floatLogo 4s ease-in-out infinite;
     }
 
     .logo-container img {
-      width: 160px;
+      width: 140px;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,255,231,0.5);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+      100% { transform: scale(1); opacity: 1; }
     }
 
     .contact-btn {
@@ -176,38 +185,40 @@
 
   <section>
     <h2>Quem é The Froyd?</h2>
-    <p>Froyd é mais que um apelido. É o arquétipo do estrategista moderno — mente afiada, execução precisa e presença marcante. Uma figura que transmite domínio e inteligência sem precisar dizer uma palavra. Com histórico de liderança, branding, UX, administração e posicionamento, Froyd é uma entidade digital que molda o jogo à sua imagem.</p>
-    <p>Por trás da assinatura "Froyd", há uma mente: <strong style="color:#00ffe7;">R.G.F.</strong> — ou, para os mais próximos, Rafael Gomes Ferraz. Mas aqui, o foco é a marca. A ideia. O movimento. E Froyd é o nome que comanda tudo isso.</p>
-    <p>Criador do <strong>VibEazy Online</strong>, um servidor de roleplay diferenciado que já nasce com visão empresarial e proposta disruptiva, e da <strong>Nexus Group</strong>, um hub profissional que une desenvolvedores e projetos sob uma bandeira de excelência e inovação.</p>
+    <p>The Froyd é a personificação da visão, estratégia e execução. Um nome que ressoa como sinônimo de poder intelectual, liderança fria e inovação extrema. Mais do que um empreendedor digital, Froyd é um arquiteto de realidades, alguém que pega o ordinário e transforma em impérios extraordinários. Suas ideias não seguem padrões — elas os destroem e constroem novos paradigmas.</p>
+    <p>Por trás da figura misteriosa e estrategista, há um construtor incansável. O VibEazy Online, sua obra-prima no universo do roleplay, é um exemplo vivo disso. Froyd não joga o jogo — ele redesenha o tabuleiro. Com base forte em branding, experiência de usuário e monetização, criou projetos que ultrapassam o conceito de servidores: são ecossistemas completos.</p>
+    <p>E se olhar mais fundo, perceberá que The Froyd é também uma mente que atende por <strong>Rafael Gomes Ferraz</strong> — um nome que poucos conhecem, mas muitos já seguem.</p>
+    <div style="text-align:center;">
+      <a href="#vibeazy" class="btn">Explorar o VibEazy</a>
+      <a href="#nexus" class="btn">Ver Nexus Group</a>
+    </div>
   </section>
 
-  <div class="logo-container">
-    <img src="vlogo.png" alt="Logo VibEazy Online" />
-  </div>
+  <section class="cards-container">
+    <div class="card" id="vibeazy">
+      <h2>VibEazy Online</h2>
+      <p>O <strong>VibEazy Online</strong> é a revolução do Roleplay Mobile. Um servidor SA-MP/OpenMP com economia realista, integração de Pix, eventos valendo dinheiro real, rede social interna, rádio, sistema de pets e um spawn inovador pensado exclusivamente para o público de celular.</p>
+      <p>Criado por Froyd, o projeto tem como objetivo transformar entretenimento em oportunidade, e jogadores em parte de um verdadeiro ecossistema. Com administração profissional, uma economia integrada ao mundo real e mecânicas que realmente diferenciam da concorrência, o VibEazy se posiciona como um dos servidores mais visionários da cena nacional.</p>
+      <div class="logo-container">
+        <img src="vlogo.png" alt="Logo VibEazy Online">
+      </div>
+      <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank">Jogar VibEazy</a>
+    </div>
 
-  <section class="card" id="vibeazy">
-    <h2>VibEazy Online</h2>
-    <p>VibEazy Online é um servidor SA-MP/OpenMP projetado para quebrar o ciclo das cópias. Aqui, o realismo encontra a inovação. Com foco total no público mobile e uma economia que simula o mundo real — inclusive com transações via Pix — o VibEazy é mais que um servidor: é um projeto de impacto.</p>
-    <p>✅ Spawn único e intuitivo. <br>✅ Economia realista com moeda Eazy Coin. <br>✅ Missões, sistema de pets, rede social interna, rádio, eventos com Pix e muito mais. <br>✅ Administração profissional e segura. <br>✅ Fideliza o jogador desde o primeiro minuto.</p>
-    <p>Com um ecossistema empresarial interno, o servidor integra facções, famílias, corporações, propriedades e empresas reais com estrutura e organização. Tudo isso amparado por eventos frequentes, recompensas reais e sistemas sociais de alto engajamento.</p>
-    <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank">Entrar no VibEazy</a>
-  </section>
-
-  <div class="logo-container">
-    <img src="nlogo.png" alt="Logo Nexus Group" />
-  </div>
-
-  <section class="card" id="nexus">
-    <h2>Nexus Group</h2>
-    <p>Fundada por Froyd, a <strong>Nexus Group</strong> é o ambiente oficial que reúne desenvolvedores, projetos e mentes brilhantes. Um verdadeiro hub empresarial onde criatividade e visão estratégica se encontram.</p>
-    <p>É dentro da Nexus que o <strong>VibEazy Online</strong> nasceu — e também onde outras iniciativas como servidores DayZ, MTA, FiveM, Minecraft, Roblox, além da Duran Host e Horyzon Store, estão ganhando forma.</p>
-    <p>Se você quer fazer parte de algo maior que você mesmo, a Nexus é o seu ponto de partida.</p>
-    <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank">Entrar na Nexus</a>
+    <div class="card" id="nexus">
+      <h2>Nexus Group</h2>
+      <p>A <strong>Nexus Group</strong> é a mente corporativa por trás dos projetos. Um hub de desenvolvedores e empreendedores digitais onde o profissionalismo é a base. Todos os projetos do Froyd, inclusive o VibEazy Online, fazem parte dessa estrutura. É aqui que ideias ganham forma, que talentos se conectam e que novos servidores como DayZ, FiveM, MTA, Minecraft e Roblox nascem com uma fundação sólida.</p>
+      <p>A Nexus também integra a <strong>Horyzon Store</strong> (mods, hacks, serviços) e a <strong>Duran Host</strong> (hospedagens para servidores). Dentro da Nexus, não se trabalha em projetos — se constrói legado.</p>
+      <div class="logo-container">
+        <img src="nlogo.png" alt="Logo Nexus Group">
+      </div>
+      <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank">Entrar na Nexus</a>
+    </div>
   </section>
 
   <section>
     <h2>Contato Profissional</h2>
-    <p>Propostas, parcerias ou agendamento de reuniões? Fale direto com a mente por trás de tudo isso.</p>
+    <p>Para propostas, parcerias, integração de projetos ou agendamento de chamadas profissionais, utilize um dos canais abaixo:</p>
     <div style="text-align:center;">
       <button class="contact-btn" onclick="window.location.href='mailto:contatovibeazycity@gmail.com'">Email VibEazy</button>
       <button class="contact-btn" onclick="window.location.href='mailto:contatonexusgroup@gmail.com'">Email Nexus Group</button>
