@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Froyd | Estratégia, Inovação e Poder</title>
+  <title>Froyd | Visionário</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0c0c0c;
-      color: #f0f0f0;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      overflow-x: hidden;
     }
+
     header {
-      background-color: #111;
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px 20px;
+      animation: fadeInDown 1.5s ease-out;
     }
+
     header h1 {
-      font-size: 3em;
-      margin: 0;
-      color: #00ffff;
+      font-size: 3rem;
+      background: linear-gradient(to right, #8a2be2, #00ffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
     header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #bbb;
+      font-size: 1.3rem;
+      color: #aaa;
     }
-    .container {
+
+    .banner {
+      width: 100%;
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 30px auto;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #8a2be2;
+      animation: zoomIn 2s ease-in-out;
     }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      animation: fadeIn 2s ease-in;
+    }
+
     h2 {
-      color: #00ffff;
-      border-bottom: 1px solid #333;
-      padding-bottom: 10px;
+      border-left: 4px solid #8a2be2;
+      padding-left: 10px;
+      color: #8a2be2;
     }
+
     a {
       color: #00ffff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px 10px;
       color: #666;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
@@ -58,41 +94,28 @@
     <p>Inovação, Estratégia e Domínio.</p>
   </header>
 
+  <img src="images/froyd-banner.png" alt="Banner do Froyd" class="banner" />
+
   <div class="container">
     <h2>Quem é Froyd?</h2>
-    <p>
-      Froyd é uma das figuras mais visionárias da nova era digital. Criador e líder do <strong>VibEazy Online</strong> e da <strong>Nexus Group</strong>,
-      Froyd comanda com autoridade, estratégia e um foco absoluto em inovação.  
-    </p>
-    <p>
-      Sua presença impõe respeito, sua comunicação cativa e sua visão define o futuro. Froyd não é apenas um nome — é uma identidade associada a liderança, inteligência estratégica e poder.
-    </p>
+    <p>Froyd é a mente por trás do VibEazy Online, Nexus Group, Horyzon Store e muito mais. Um visionário nato, estrategista extremo, e arquiteto do novo mundo digital.</p>
 
-    <h2>VibEazy Online</h2>
-    <p>
-      Um servidor de SA-MP/OpenMP que redefine completamente o Roleplay mobile. Com sistemas únicos, economia realista e uma abordagem inovadora desde o primeiro segundo de jogo.
-    </p>
-    <p>
-      <a href="https://discord.gg/k9fmTJr7HD" target="_blank">Acesse o VibEazy Online</a>
-    </p>
+    <h2>Projetos em Destaque</h2>
+    <ul>
+      <li><strong>VibEazy Online</strong> — O servidor SA-MP mais avançado, com economia realista e foco no mobile.</li>
+      <li><strong>Nexus Group</strong> — Hub profissional para devs e projetos digitais.</li>
+      <li><strong>Horyzon Store</strong> — Plataforma para vendas digitais, mods, hacks e serviços RP.</li>
+    </ul>
 
-    <h2>Nexus Group</h2>
+    <h2>Contato</h2>
     <p>
-      A Nexus Group é mais do que um hub de desenvolvedores — é uma central de poder, conhecimento e execução. Estamos desenvolvendo uma infinidade de projetos inovadores e abrindo espaço para mentes ambiciosas que queiram integrar seus projetos a algo maior.
-    </p>
-    <p>
-      <a href="https://discord.gg/YXvX62YzGQ" target="_blank">Entrar para a Nexus Group</a>
-    </p>
-
-    <h2>Contato Profissional</h2>
-    <p>
-      Quer fazer parte, colaborar ou propor algo grande? Entre em contato diretamente no Discord: <strong>@Froyd</strong><br />
-      Ou use os canais oficiais dos servidores e grupos.
+      📧 <a href="mailto:contatovibeazycity@gmail.com">contatovibeazycity@gmail.com</a><br>
+      📧 <a href="mailto:contatonexusgroup@gmail.com">contatonexusgroup@gmail.com</a>
     </p>
   </div>
 
   <footer>
-    &copy; 2025 Froyd. Todos os direitos reservados.
+    Froyd © 2025 – Todos os direitos reservados.
   </footer>
 
 </body>
