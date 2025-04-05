@@ -1,114 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Froyd - Nexus Group</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Space Grotesk', 'sans-serif'],
-            },
-            colors: {
-              primary: '#8B5CF6',
-              dark: '#111827',
-            },
-          },
-        },
-      }
-    </script>
-  </head>
-  <body class="bg-dark text-white font-sans">
-    <!-- Hero Banner -->
-    <section class="relative bg-gradient-to-br from-primary to-indigo-800 py-28 text-center">
-      <h1 class="text-6xl font-bold uppercase tracking-wide">THE FROYD</h1>
-      <p class="mt-4 text-xl italic max-w-2xl mx-auto">As pessoas de menos expectativa fazem coisas que você menos imagina.</p>
-    </section>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Froyd — O Visionário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
 
-    <!-- Quem é Froyd -->
-    <section class="px-6 md:px-20 py-16 bg-black text-white">
-      <h2 class="text-4xl font-bold mb-4">Quem é Froyd?</h2>
-      <p class="text-lg leading-relaxed max-w-4xl">
-        Rafael Gomes Ferraz é o criador da Nexus Group, fundador do VibEazy Online e idealizador de projetos visionários. Extremamente estratégico, persuasivo e direto, Froyd lidera com foco em inovação, impacto e crescimento. É um nome que representa autoridade, inteligência e um movimento de transformação no cenário digital.
-      </p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="bg-zinc-900 p-6 rounded-2xl shadow-xl">
-          <h3 class="text-xl font-semibold mb-2">Habilidades</h3>
-          <ul class="list-disc list-inside">
-            <li>Gestão de projetos e equipes</li>
-            <li>Branding e posicionamento</li>
-            <li>Game design e experiência do usuário</li>
-          </ul>
-        </div>
-        <div class="bg-zinc-900 p-6 rounded-2xl shadow-xl">
-          <h3 class="text-xl font-semibold mb-2">Certificações</h3>
-          <ul class="list-disc list-inside">
-            <li>Marketing Estratégico</li>
-            <li>Gestão Empresarial</li>
-            <li>Comunicação e Persuasão Avançada</li>
-          </ul>
-        </div>
-        <div class="bg-zinc-900 p-6 rounded-2xl shadow-xl">
-          <h3 class="text-xl font-semibold mb-2">Visão</h3>
-          <p>Construir um ecossistema digital lucrativo, profissional e respeitado — com impacto real no mercado.</p>
-        </div>
-      </div>
-    </section>
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+    }
 
-    <!-- Projetos principais -->
-    <section class="px-6 md:px-20 py-20 bg-zinc-950">
-      <h2 class="text-4xl font-bold mb-10 text-center">Projetos Principais</h2>
-      <div class="grid md:grid-cols-2 gap-12">
-        <div class="bg-zinc-900 rounded-2xl p-8 shadow-xl">
-          <h3 class="text-3xl font-bold mb-4">VibEazy Online</h3>
-          <p class="text-lg leading-relaxed mb-4">
-            Um servidor SA-MP/OpenMP inovador, com economia realista e foco no público mobile. Oferece spawn diferenciado, sistemas intuitivos e uma estrutura profissional que se destaca no cenário do RP brasileiro.
-          </p>
-          <ul class="list-disc list-inside mb-4">
-            <li>Spawn e onboarding intuitivo</li>
-            <li>Economia baseada em dinheiro real</li>
-            <li>Eventos com prêmios e fidelização</li>
-            <li>Social interna, rádio, pets e mais</li>
-          </ul>
-          <a href="#" class="inline-block mt-4 bg-primary px-5 py-2 rounded-lg font-semibold hover:bg-indigo-600 transition">Ver mais</a>
-        </div>
-        <div class="bg-zinc-900 rounded-2xl p-8 shadow-xl">
-          <h3 class="text-3xl font-bold mb-4">Nexus Group</h3>
-          <p class="text-lg leading-relaxed mb-4">
-            Um hub profissional de desenvolvedores e projetos, com estrutura empresarial, organização impecável e foco em impacto real. Todos os projetos externos estão centralizados dentro da Nexus Group.
-          </p>
-          <ul class="list-disc list-inside mb-4">
-            <li>Comunidade empresarial</li>
-            <li>Projetos profissionais e interligados</li>
-            <li>Oportunidades para devs, designers e líderes</li>
-            <li>Expansão para Roblox, DayZ, MTA e mais</li>
-          </ul>
-          <a href="#" class="inline-block mt-4 bg-primary px-5 py-2 rounded-lg font-semibold hover:bg-indigo-600 transition">Ver mais</a>
-        </div>
-      </div>
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      background-color: #0b0b0b;
+    }
 
-      <!-- Logo Nexus Group -->
-      <div class="mt-16 text-center">
-        <img src="nlogo.jpg" alt="Nexus Group Logo" class="mx-auto w-40 h-40 object-contain rounded-2xl shadow-2xl">
-      </div>
-    </section>
+    header img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 50px rgba(0, 255, 200, 0.2);
+    }
 
-    <!-- Contato -->
-    <section class="px-6 md:px-20 py-20 bg-black text-white">
-      <h2 class="text-4xl font-bold mb-6 text-center">Contato Profissional</h2>
-      <div class="flex flex-col md:flex-row justify-center gap-8">
-        <a href="mailto:nexusgroupcorp@gmail.com" class="bg-primary px-6 py-3 rounded-xl text-lg font-semibold hover:bg-indigo-600 transition">📧 nexusgroupcorp@gmail.com</a>
-        <a href="mailto:vibeazyonline@gmail.com" class="bg-primary px-6 py-3 rounded-xl text-lg font-semibold hover:bg-indigo-600 transition">📩 vibeazyonline@gmail.com</a>
-      </div>
-    </section>
+    .frase-impacto {
+      font-size: 1.4rem;
+      margin-top: 20px;
+      color: #00ffe7;
+      font-weight: bold;
+      letter-spacing: 1px;
+      background-color: #111;
+      padding: 15px;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0,255,231,0.2);
+    }
 
-    <!-- Rodapé -->
-    <footer class="bg-zinc-950 text-center py-6 text-gray-400">
-      <p>Site oficial do movimento Nexus Group. Todos os direitos reservados.</p>
-    </footer>
-  </body>
+    .alerta {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #f8f8f8;
+      box-shadow: inset 0 0 10px rgba(0, 255, 231, 0.4);
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+      border-bottom: 1px solid #222;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      color: #00ffe7;
+      margin-bottom: 25px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    section p {
+      margin-bottom: 20px;
+      color: #ddd;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 12px 24px;
+      background-color: #00ffe7;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00bfa3;
+      color: #fff;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 16px;
+      padding: 25px;
+      width: 48%;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+    }
+
+    .logo-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .logo-container img {
+      width: 120px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,231,0.5);
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer h3 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .contact-btn {
+      background-color: #00ffe7;
+      border: none;
+      color: #000;
+      padding: 12px 24px;
+      margin: 10px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #00bfa3;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="FROYD.jpg" alt="Froyd Banner" />
+    <div class="frase-impacto">Pessoas de menos que esperam fazem coisas que você menos imagina.</div>
+  </header>
+
+  <section>
+    <h2>Quem é The Froyd?</h2>
+    <p>The Froyd é mais que um nome — é uma mentalidade. Um estrategista visionário, executor nato e comunicador com DNA de liderança. Com certificações em Administração e Gestão de Empresas, Branding, Comunicação Digital, Desenvolvimento Estratégico, UX, Performance e Posicionamento de Marca, ele domina a construção de impérios digitais como poucos.</p>
+    <p>É o criador da <strong>Nexus Group</strong> — o maior hub de desenvolvedores da nova geração — e do revolucionário servidor <strong>VibEazy Online</strong>. Froyd não segue tendências. Ele cria novos padrões. Seus projetos combinam estrutura empresarial, inovação prática e visão de longo prazo.</p>
+    <p>Com foco em automação, monetização, sistemas de fidelização e ecossistemas expansíveis, Froyd transforma servidores em empresas e comunidades em legados. Ele não apenas constrói coisas — ele constrói o futuro.</p>
+    <a href="#nexus" class="btn">Ver Nexus Group</a>
+    <a href="#vibeazy" class="btn">Explorar o VibEazy</a>
+  </section>
+
+  <section class="cards-container">
+    <div class="card" id="nexus">
+      <h2>Nexus Group</h2>
+      <p>Mais que uma equipe — a <strong>Nexus Group</strong> é um ecossistema profissional de desenvolvedores e visionários. Cada projeto nasce com estrutura. Cada membro cresce com propósito. Aqui, desenvolvedores mantêm sua independência enquanto integram uma rede com branding forte, networking e possibilidades reais de escala.</p>
+      <p>Projetos como servidores DayZ, Roblox, Minecraft, FiveM, MTA, além da <strong>Horyzon Store</strong> e da <strong>Duran Host</strong>, estão centralizados dentro da Nexus. Tudo isso sob uma identidade que transmite profissionalismo, ordem e expansão. Se você cria, você precisa estar aqui.</p>
+      <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank">Entrar na Nexus</a>
+    </div>
+
+    <div class="card" id="vibeazy">
+      <h2>VibEazy Online</h2>
+      <p>Um servidor SA-MP/OpenMP que não se contenta com o "mais do mesmo". O <strong>VibEazy Online</strong> foi desenvolvido com foco total no público mobile, usando mecânicas inovadoras e sistemas que imitam o real — desde economia até interações sociais, negócios, pets e redes sociais internas.</p>
+      <p>Eventos com prêmios reais, uma economia que funciona, spawn diferenciado e um sistema administrativo eficiente fazem do VibEazy uma experiência única. Aqui o jogo não é só diversão. É carreira, comunidade e visão de futuro.</p>
+      <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank">Jogar VibEazy</a>
+    </div>
+  </section>
+
+  <div class="logo-container">
+    <img src="nlogo.jpg" alt="Logo Nexus Group" />
+  </div>
+
+  <section>
+    <h2>Contato Profissional</h2>
+    <p>Para propostas, parcerias, integração de projetos ou agendamento de chamadas profissionais, utilize um dos canais abaixo:</p>
+    <button class="contact-btn" onclick="window.location.href='mailto:contatovibeazycity@gmail.com'">Email VibEazy</button>
+    <button class="contact-btn" onclick="window.location.href='mailto:contatonexusgroup@gmail.com'">Email Nexus Group</button>
+    <button class="contact-btn" onclick="window.location.href='mailto:rafaelgomesferraz0@gmail.com'">Email Pessoal</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025. Todos os direitos reservados.</p>
+    <h3>Desenvolvido com visão, impacto e estratégia.</h3>
+  </footer>
+</body>
 </html>
