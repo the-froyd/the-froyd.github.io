@@ -1,122 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Froyd | Visionário</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
-      color: #fff;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
       overflow-x: hidden;
     }
-
     header {
+      background: url('FROYD.jpg') no-repeat center center;
+      background-size: cover;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 60px 20px 20px;
-      animation: fadeInDown 1.5s ease-out;
     }
-
-    header h1 {
-      font-size: 3rem;
-      background: linear-gradient(to right, #8a2be2, #00ffff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-
-    header p {
-      font-size: 1.3rem;
-      color: #aaa;
+    h1, h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
     }
-
-    .banner {
-      width: 100%;
-      max-width: 900px;
-      margin: 30px auto;
-      display: block;
-      border-radius: 20px;
-      box-shadow: 0 0 25px #8a2be2;
-      animation: zoomIn 2s ease-in-out;
+    p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+      color: #ccc;
     }
-
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      animation: fadeIn 2s ease-in;
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, #fff, transparent);
+      margin: 60px auto;
+      width: 60%;
     }
-
-    h2 {
-      border-left: 4px solid #8a2be2;
-      padding-left: 10px;
-      color: #8a2be2;
+    .highlight {
+      color: #00e0d6;
+      font-weight: bold;
     }
-
-    a {
-      color: #00ffff;
+    .link-button {
+      background: #00e0d6;
+      color: #0f0f0f;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
+      display: inline-block;
       text-decoration: none;
+      transition: 0.3s;
     }
-
-    a:hover {
-      text-decoration: underline;
+    .link-button:hover {
+      background: #00b8a8;
     }
-
     footer {
       text-align: center;
-      padding: 30px 10px;
-      color: #666;
-      border-top: 1px solid #333;
+      padding: 30px;
+      color: #888;
       font-size: 0.9rem;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes zoomIn {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
 <body>
+  <header></header>
 
-  <header>
-    <h1>Froyd</h1>
-    <p>Inovação, Estratégia e Domínio.</p>
-  </header>
+  <section>
+    <h1>Quem é o <span class="highlight">Froyd</span>?</h1>
+    <p>Froyd é mais do que um nome. É uma mente criativa por trás do <strong>VibEazy Online</strong> e do <strong>Nexus Group</strong>, dois dos projetos mais ousados e inovadores no universo dos jogos e tecnologia. Estratégico, reservado e visionário, ele é movido por uma vontade inabalável de criar um ecossistema digital onde ideias se tornam revoluções.</p>
+  </section>
 
-  <img src="images/froyd-banner.png" alt="Banner do Froyd" class="banner" />
+  <div class="divider"></div>
 
-  <div class="container">
-    <h2>Quem é Froyd?</h2>
-    <p>Froyd é a mente por trás do VibEazy Online, Nexus Group, Horyzon Store e muito mais. Um visionário nato, estrategista extremo, e arquiteto do novo mundo digital.</p>
-
-    <h2>Projetos em Destaque</h2>
+  <section>
+    <h2>🎮 VibEazy Online</h2>
+    <p>O <strong>VibEazy Online</strong> é um servidor de <span class="highlight">GTA RP</span> que redefine o conceito de roleplay. Focado no público mobile, com <strong>economia realista</strong>, sistema de <strong>moeda real</strong> com taxa empresarial, <strong>spawn intuitivo</strong>, e recursos exclusivos como:</p>
     <ul>
-      <li><strong>VibEazy Online</strong> — O servidor SA-MP mais avançado, com economia realista e foco no mobile.</li>
-      <li><strong>Nexus Group</strong> — Hub profissional para devs e projetos digitais.</li>
-      <li><strong>Horyzon Store</strong> — Plataforma para vendas digitais, mods, hacks e serviços RP.</li>
+      <li>🐾 Pets e rede social interna</li>
+      <li>📻 Rádio e interações sociais de verdade</li>
+      <li>📌 Missões dinâmicas que geram conexões</li>
     </ul>
+    <br>
+    <a href="https://discord.gg/seulinkvibeazy" target="_blank" class="link-button">Entrar na Comunidade</a>
+  </section>
 
-    <h2>Contato</h2>
-    <p>
-      📧 <a href="mailto:contatovibeazycity@gmail.com">contatovibeazycity@gmail.com</a><br>
-      📧 <a href="mailto:contatonexusgroup@gmail.com">contatonexusgroup@gmail.com</a>
-    </p>
-  </div>
+  <div class="divider"></div>
+
+  <section>
+    <h2>💼 Nexus Group</h2>
+    <p>A <strong>Nexus Group</strong> é o centro de tudo. Um <span class="highlight">hub profissional</span> para desenvolvedores e projetos digitais. Aqui, todos os projetos ganham estrutura, visibilidade e conexões. Seja você iniciante ou experiente, esse é o espaço onde seu projeto não só nasce, ele evolui.</p>
+    <ul>
+      <li>📁 Projetos documentados e organizados</li>
+      <li>🤝 Parcerias, networking e visibilidade real</li>
+      <li>🧠 Troca de conhecimento entre mentes afiadísimas</li>
+    </ul>
+    <br>
+    <a href="https://discord.gg/seulinknexus" target="_blank" class="link-button">Acessar o Hub Nexus</a>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>📬 Contato</h2>
+    <p>Quer falar diretamente comigo ou com a equipe? Seja para parcerias, ideias ou projetos em conjunto:</p>
+    <ul>
+      <li>Email: <strong>contato@nexusgroup.com</strong></li>
+      <li>Discord: <strong>@froyd</strong></li>
+    </ul>
+  </section>
 
   <footer>
-    Froyd © 2025 – Todos os direitos reservados.
+    Desenvolvido com raça e visão por Froyd — Todos os direitos reservados. <br>
+    "Ideias comuns não constroem legados extraordinários."
   </footer>
-
 </body>
 </html>
