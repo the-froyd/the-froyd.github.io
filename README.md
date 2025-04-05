@@ -1,39 +1,108 @@
-# Froyd
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Froyd — Domine o Jogo Digital</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-**Fundador e estrategista-chefe do império digital VibEazy Online e Nexus Group.**
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
 
-Froyd é uma das figuras mais visionárias e influentes do cenário digital brasileiro. Com uma mente afiada, espírito estratégico e um foco absoluto em inovação, Froyd não é apenas um criador — é um arquiteto de ecossistemas. Seu nome carrega respeito, liderança e autoridade onde quer que esteja envolvido.
+    header {
+      background: linear-gradient(to right, #6a00ff, #a200ff);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 0 30px #a200ff70;
+    }
 
-## Sobre
+    header h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-Detentor de uma inteligência rara, Froyd é conhecido por sua postura imponente, ideias disruptivas e capacidade de execução em múltiplas frentes. Seu objetivo não é seguir tendências — é criar novos caminhos. O que antes era considerado impossível ou distante, nas mãos de Froyd se torna inevitável.
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      opacity: 0.8;
+    }
 
-Visionário desde cedo, lidera com ousadia e profundidade, unindo técnica, estética e propósito. Sua presença se impõe sem esforço, sua comunicação tem impacto, e sua estratégia é afiada como uma lâmina.
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-Não há nada genérico em seus projetos, e isso não é por acaso — é por design. A busca é pela excelência, pela singularidade, pela construção de legados.
+    h2 {
+      font-size: 2em;
+      color: #a200ff;
+      margin-bottom: 10px;
+    }
 
----
+    p {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
 
-## VibEazy Online
-Um servidor SA-MP/OpenMP que rompe com os clichês do RP tradicional. Froyd lidera o VibEazy como um verdadeiro império digital — com economia realista, experiências intuitivas, sistemas inovadores e foco total no público mobile. Não é só um servidor: é uma nova forma de viver o SA-MP.
+    img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ffffff20;
+    }
 
-🔗 [Acesse o VibEazy Online](https://discord.gg/k9fmTJr7HD)
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #999;
+      border-top: 1px solid #222;
+    }
 
----
+    a {
+      color: #a200ff;
+      text-decoration: none;
+    }
 
-## Nexus Group
-Mais que uma empresa — uma força motriz. Froyd fundou a Nexus Group como um hub empresarial de altíssimo nível, voltado para o futuro da criação digital. O Nexus não é limitado a um ou dois projetos: está em expansão constante, reunindo mentes brilhantes, desenvolvedores de elite e ideias disruptivas.
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
 
-Se você tem um projeto grandioso e deseja integrá-lo a um ecossistema sólido, profissional e com visão de império — o Nexus Group está aberto a alianças estratégicas.
+  <header>
+    <h1>Froyd</h1>
+    <p>Domínio digital com estratégia, impacto e visão de futuro.</p>
+  </header>
 
-🔗 [Acesse o Nexus Group](https://discord.gg/YXvX62YzGQ)
+  <section>
+    <h2>Quem é Froyd?</h2>
+    <p>Intelecto, influência e visão. Criador de ecossistemas digitais lucrativos, como o VibEazy Online e Nexus Group, Froyd domina o cenário com inovação e autoridade. Não é só um nome, é uma marca.</p>
 
----
+    <img src="images/froyd-banner.png" alt="Imagem representativa de Froyd">
 
-## Frase que define Froyd
-_"Nunca subestime quem caminha em silêncio. É ali que nascem os impérios."_
+    <h2>Projetos</h2>
+    <p>VibEazy Online, Nexus Group, Duran Host, Horyzon Store... O império só está começando. Cada projeto é uma peça no tabuleiro do jogo digital.</p>
 
----
+    <h2>Conecte-se</h2>
+    <p>Siga a visão. <a href="https://discord.gg/seulink" target="_blank">Entre no Discord</a> e acompanhe os passos do império.</p>
+  </section>
 
-**Esse é Froyd. Não apenas um nome. Uma força.**
+  <footer>
+    &copy; 2025 Froyd. Todos os direitos reservados.
+  </footer>
 
+</body>
+</html>
