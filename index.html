@@ -1,194 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FROYD — Biografia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FROYD — O Visionário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
+
     body {
-      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
-      color: white;
-      line-height: 1.7;
-      padding: 20px;
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
     }
+
     header {
       text-align: center;
-      margin-bottom: 50px;
-      animation: fadeIn 1.5s ease-in-out;
+      padding: 60px 20px 20px;
+      background-color: #0b0b0b;
     }
+
+    header img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 50px rgba(0, 255, 200, 0.2);
+    }
+
     header h1 {
-      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
       color: #00ffe7;
+      margin-top: 30px;
       letter-spacing: 2px;
     }
-    header p {
-      font-size: 1.1rem;
-      color: #bbb;
-    }
-    section {
-      margin-bottom: 80px;
+
+    .alerta {
+      background-color: #1e1e1e;
       padding: 20px;
-      border-left: 5px solid #00ffe7;
-      background: #111111;
-      box-shadow: 0 0 15px rgba(0, 255, 231, 0.2);
-      animation: slideIn 1s ease-in-out;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #f8f8f8;
+      box-shadow: inset 0 0 10px rgba(0, 255, 231, 0.4);
     }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      border-bottom: 1px solid #222;
+    }
+
     section h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #00ffe7;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-family: 'Orbitron', sans-serif;
     }
+
     section p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      color: #ddd;
+      font-size: 1.1rem;
     }
+
     .btn {
       display: inline-block;
-      padding: 10px 20px;
-      margin-top: 15px;
+      margin: 10px 10px 0 0;
+      padding: 12px 24px;
       background-color: #00ffe7;
       color: #000;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s ease;
+      transition: 0.3s;
     }
+
     .btn:hover {
-      background-color: #00c0a7;
+      background-color: #00bfa3;
       color: #fff;
     }
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 30px;
     }
-    @keyframes slideIn {
-      from {opacity: 0; transform: translateX(-40px);}
-      to {opacity: 1; transform: translateX(0);}
+
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 16px;
+      padding: 25px;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer h3 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .contact-btn {
+      background-color: #00ffe7;
+      border: none;
+      color: #000;
+      padding: 12px 24px;
+      margin: 10px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #00bfa3;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="FROYD.jpg" alt="Froyd Banner" style="width:100%; border-radius: 12px; box-shadow: 0 0 30px #00ffe7;" />
+    <img src="FROYD.jpg" alt="Froyd Banner" />
     <h1>FROYD</h1>
-    <p>Visão além do presente. Estratégia acima do comum. Uma mente que transforma projetos em impérios.</p>
   </header>
+
+  <div class="alerta">
+    Pessoas de menos que esperam fazem coisas que você menos imagina. — Rafael Gomes Ferraz
+  </div>
 
   <section>
     <h2>Quem é Froyd?</h2>
-    <p>Conhecido como Froyd, ele não é apenas um criador. É uma força criativa, estratégica e empresarial. Especialista em design gráfico, programador autodidata, certificado em administração, e um comunicador nato — Froyd une conhecimento técnico com mentalidade de liderança.</p>
-
-    <p>Com uma visão ousada, Froyd fundou o <strong>VibEazy Online</strong> e a <strong>Nexus Group</strong>, consolidando duas estruturas completamente diferentes em um ecossistema digital coeso. Ele não trabalha com tendências — ele cria tendências. Suas decisões são movidas por lógica, intuição e impacto.</p>
-
-    <p>Ele domina linguagens de programação, estruturas de backend, experiência do usuário e modelagem de negócios. Mais do que técnico, Froyd é estratégico — entende o que move as pessoas e como transformar ideias em revoluções digitais.</p>
-
-    <p>Atualmente, lidera uma série de desenvolvimentos através da <strong>Nexus Group</strong>, uma comunidade que abriga diversos projetos digitais — desde jogos a plataformas comerciais — sempre com foco em inovação, profissionalismo e expansão.</p>
-
-    <a href="#projetos" class="btn">Ver Projetos Principais</a>
+    <p>Froyd é a mente por trás de projetos inovadores no cenário digital. Um criador, gestor, estrategista e programador autodidata. Certificado em administração, especialista em branding, apaixonado por performance, e mestre em transformar ideias em resultados concretos. </p>
+    <p>Ele fundou o <strong>VibEazy Online</strong>, um servidor de GTA RP revolucionário, e a <strong>Nexus Group</strong>, um hub profissional de desenvolvedores. Sua visão vai além de tendências — Froyd constrói estruturas que impactam o mercado.</p>
+    <p>Com mentalidade de império, sua essência mistura domínio técnico com genialidade empresarial. Ele sabe o que precisa ser feito e como transformar ações em legado. Suas criações não são temporárias — são referências.</p>
+    <a href="#nexus" class="btn">Ver Nexus Group</a>
+    <a href="#vibeazy" class="btn">Explorar o VibEazy</a>
   </section>
 
-  <!-- Aqui conectaremos a segunda parte com os projetos -->
-  <section id="projetos">
-    <h2>Principais Projetos</h2>
-    <!-- Continuação virá aqui -->
+  <section id="vibeazy">
+    <h2>VibEazy Online</h2>
+    <div class="card">
+      <p>O <strong>VibEazy Online</strong> é um servidor de GTA RP que redefine a experiência roleplay com foco total em jogabilidade mobile, economia realista, inovação e fidelização. O servidor foi pensado para parecer novo em cada detalhe: do spawn ao sistema de missões, pets, redes sociais internas e empresas com dinheiro real.</p>
+      <p>Durante os eventos iniciais, Froyd liderou campanhas com prêmios em Pix, mansões, moedas virtuais e acesso VIP — resultando em crescimento rápido e engajamento intenso.</p>
+      <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank">Entrar na Comunidade VibEazy</a>
+    </div>
   </section>
+
+  <section id="nexus">
+    <h2>Nexus Group</h2>
+    <div class="card">
+      <p>A <strong>Nexus Group</strong> é a comunidade empresarial que conecta desenvolvedores, ideias e projetos em um só lugar. Froyd idealizou a Nexus como um ecossistema profissional, onde cada membro tem voz, cada projeto tem espaço, e cada ideia pode ser construída com estrutura real.</p>
+      <p>Projetos como servidores DayZ, Roblox, MTA e plataformas como a Horyzon Store e a Duran Host estão todos interligados dentro do Nexus Group — onde inovação, profissionalismo e expansão não são metas, são premissas.</p>
+      <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank">Conhecer a Nexus Group</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contato Profissional</h2>
+    <p>Para propostas, parcerias, integração de projetos ou agendamento de chamadas profissionais, utilize um dos canais abaixo:</p>
+    <button class="contact-btn" onclick="window.location.href='mailto:contatovibeazycity@gmail.com'">Email VibEazy: contatovibeazycity@gmail.com</button>
+    <button class="contact-btn" onclick="window.location.href='mailto:contatonexusgroup@gmail.com'">Email Nexus Group: contatonexusgroup@gmail.com</button>
+    <button class="contact-btn" onclick="window.location.href='mailto:rafaelgomesferraz0@gmail.com'">Email Pessoal: rafaelgomesferraz0@gmail.com</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rafael Gomes Ferraz (Froyd). Todos os direitos reservados.</p>
+    <h3>Desenvolvido com visão, impacto e estratégia.</h3>
+  </footer>
 </body>
 </html>
-<!-- Segunda Parte: Projetos Principais e Contato -->
-<section id="projetos" class="py-20 px-6 bg-gradient-to-b from-black to-gray-900 text-white">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-5xl font-bold mb-10 animate-fade-up">Projetos Principais</h2>
-
-    <!-- VibEazy Online -->
-    <div class="bg-gray-800 p-10 rounded-2xl shadow-xl mb-16 animate-slide-up">
-      <h3 class="text-4xl font-bold text-green-400 mb-4">VibEazy Online</h3>
-      <p class="text-lg leading-relaxed text-gray-300">
-        VibEazy Online é um servidor de GTA RP que redefine completamente a experiência roleplay, focado em inovação, economia realista,
-        e jogabilidade mobile otimizada. Cada detalhe do servidor foi criado para entregar algo único, desde o spawn inicial até as mecânicas sociais,
-        econômicas e interativas. <br><br>
-        O servidor possui um ecossistema próprio com missões, pets, sistema de rádio, rede social interna e oportunidades reais de negócios no jogo.
-        Tudo é pensado para fidelizar, surpreender e engajar o jogador com uma estrutura de administração profissional.
-      </p>
-      <a href="https://discord.gg/k9fmTJr7HD" target="_blank">
-        <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
-          Entrar na Comunidade
-        </button>
-      </a>
-    </div>
-
-    <!-- Nexus Group -->
-    <div class="bg-gray-800 p-10 rounded-2xl shadow-xl mb-16 animate-slide-up">
-      <h3 class="text-4xl font-bold text-indigo-400 mb-4">Nexus Group</h3>
-      <p class="text-lg leading-relaxed text-gray-300">
-        A Nexus Group é uma comunidade empresarial e tecnológica focada em conectar mentes brilhantes, projetos ambiciosos e desenvolvedores que querem transformar ideias em realidade.
-        Froyd lidera a Nexus com visão estratégica, unificando servidores, plataformas, produtos e talentos sob uma mesma bandeira de inovação e profissionalismo.<br><br>
-        Todos os projetos da Nexus são tratados com seriedade empresarial. Os desenvolvedores mantêm seus próprios projetos sob a estrutura da Nexus Group,
-        aproveitando o networking, organização e identidade visual forte da comunidade. Estamos constantemente desenvolvendo e incubando novas ideias.
-        Desenvolvedores podem integrar seus projetos à Nexus abrindo um ticket dentro da comunidade oficial.
-      </p>
-      <a href="https://discord.gg/YXvX62YzGQ" target="_blank">
-        <button class="mt-6 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
-          Entrar na Nexus Group
-        </button>
-      </a>
-    </div>
-
-    <!-- Contato Profissional -->
-    <div class="bg-gray-900 p-10 rounded-2xl shadow-inner animate-fade-in">
-      <h3 class="text-3xl font-bold text-white mb-6">Contato Profissional</h3>
-      <p class="text-lg text-gray-400 mb-4">
-        Para conversas sérias, propostas ou integração com algum projeto, utilize um dos canais abaixo:
-      </p>
-      <ul class="text-left text-gray-300 text-lg space-y-3">
-        <li>
-          <span class="font-semibold text-white">Contato direto:</span> Via comunidades (abra um ticket e agende uma call).
-        </li>
-        <li>
-          <span class="font-semibold text-white">Email do projeto VibEazy:</span> contatovibeazycity@gmail.com
-        </li>
-        <li>
-          <span class="font-semibold text-white">Email do projeto Nexus:</span> contatonexusgroup@gmail.com
-        </li>
-        <li>
-          <span class="font-semibold text-white">Email pessoal:</span> rafaelgomesferraz0@gmail.com
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-black text-gray-500 py-6 mt-20 text-center text-sm">
-  &copy; 2025 Froyd. Todos os direitos reservados. Desenvolvido com estratégia, impacto e visão.
-</footer>
-
-<!-- Animações TailwindCSS customizadas -->
-<style>
-  @keyframes fade-up {
-    0% {opacity: 0; transform: translateY(30px);}
-    100% {opacity: 1; transform: translateY(0);}
-  }
-  @keyframes slide-up {
-    0% {opacity: 0; transform: translateY(60px);}
-    100% {opacity: 1; transform: translateY(0);}
-  }
-  @keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  .animate-fade-up {
-    animation: fade-up 1s ease forwards;
-  }
-  .animate-slide-up {
-    animation: slide-up 1.2s ease forwards;
-  }
-  .animate-fade-in {
-    animation: fade-in 2s ease forwards;
-  }
-</style>
