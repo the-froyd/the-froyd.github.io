@@ -261,89 +261,113 @@
     </div>
   </section>
   
-<!-- Apoie o Froyd -->
-<section class="bg-[#0e0e0e] text-white px-6 py-20 sm:py-24" id="apoie">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-    
-    <!-- Texto + QR + Botão -->
-    <div class="space-y-6 animate-fadeInUp">
-      <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight text-purple-500">⚡ Invista no Futuro com Froyd</h2>
-      <p class="text-lg text-gray-300">
-        VibEazy, Nexus Group e toda a revolução que estamos criando precisa de visão. Seu apoio não é só uma doação — é um voto de confiança em algo maior, sério e estratégico.
-      </p>
-      <p class="text-gray-400">
-        Você pode ajudar a alavancar esse movimento. Cada apoio é um tijolo nessa construção.
-      </p>
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Sparkles, Wallet, MessageCircle } from "lucide-react";
 
-      <!-- QR e botão -->
-      <div class="flex flex-col sm:flex-row sm:items-center gap-6">
-        <img src="https://i.imgur.com/ABWw8uG.png" alt="QR Code Nubank" class="w-40 h-40 rounded-xl shadow-lg border border-purple-500">
-        <a href="https://nubank.com.br/pagar/1l8sb/6LNk7S4vGc" target="_blank" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 text-center w-fit animate-pulse">
-          Apoiar Agora 💜
-        </a>
-      </div>
+export default function ApoieFroyd() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-zinc-900 to-black text-white p-4">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="w-full max-w-xl"
+      >
+        <Card className="bg-zinc-950 border-zinc-800 shadow-2xl rounded-2xl p-6">
+          <CardContent>
+            <div className="flex flex-col items-center text-center gap-4">
+              <motion.h2
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="text-3xl font-bold text-white"
+              >
+                Me ajude a conquistar meu PC dos sonhos 💻🚀
+              </motion.h2>
 
-      <!-- Barra de progresso (meta) -->
-      <div class="mt-8">
-        <h3 class="text-md text-gray-300 mb-2">🎯 Meta atual: Comprar um PC novo (R$5.000)</h3>
-        <div class="w-full bg-gray-700 rounded-full h-6 overflow-hidden shadow-inner">
-          <div class="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-600 h-full text-right pr-3 text-sm font-bold text-white flex items-center justify-end animate-growBar" style="width: 45%;">R$2.250</div>
-        </div>
-        <p class="text-sm text-gray-500 mt-1 italic">Progresso visual (atualizado manualmente)</p>
-      </div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="text-zinc-400 text-sm"
+              >
+                Estou dando o meu máximo para transformar meus projetos em realidade.
+                Com sua ajuda, posso conquistar meu PC ideal (R$5.000) e elevar
+                o nível do que crio todos os dias. Seu apoio faz total diferença 🙏
+              </motion.p>
 
-      <!-- Contador fake de apoiadores -->
-      <div class="mt-6 text-sm text-gray-400">
-        <span class="text-purple-400 font-semibold">🌟 128 apoiadores</span> já fizeram parte disso.
-      </div>
+              <div className="w-full mt-6">
+                <div className="flex justify-between text-sm text-zinc-400 mb-1">
+                  <span>Meta: R$5.000</span>
+                  <span>Progresso: 0%</span>
+                </div>
+                <Progress value={0} className="h-3 bg-zinc-800" />
+              </div>
 
-      <!-- Contato para investidores -->
-      <div class="pt-6 border-t border-gray-700 mt-6 text-gray-400">
-        <p class="text-sm">
-          💼 Investidor sério? Fale direto comigo:
-          <a href="https://wa.me/557799855333" target="_blank" class="text-purple-400 hover:underline font-medium">
-            +55 77 9985-5333 (WhatsApp)
-          </a>
-        </p>
-      </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6 }}
+                className="mt-6 flex flex-col items-center gap-4"
+              >
+                <Image
+                  src="/qrcode_nubank.png"
+                  alt="QR Code Nubank"
+                  width={180}
+                  height={180}
+                  className="rounded-xl border border-zinc-700"
+                />
+                <span className="text-zinc-400 text-xs">Escaneie para doar via Pix</span>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+                className="mt-6 flex flex-col sm:flex-row gap-3 w-full"
+              >
+                <a
+                  href="https://nubank.com.br/pagar/1f96g1/PixFroyd"
+                  target="_blank"
+                  className="w-full"
+                >
+                  <Button className="w-full text-base py-6 bg-purple-600 hover:bg-purple-700 transition-all shadow-lg">
+                    <Wallet className="mr-2 h-5 w-5" /> Apoiar via Nubank
+                  </Button>
+                </a>
+                <a
+                  href="https://wa.me/5577998553333"
+                  target="_blank"
+                  className="w-full"
+                >
+                  <Button variant="outline" className="w-full text-base py-6 border-zinc-600 hover:border-zinc-400 transition-all">
+                    <MessageCircle className="mr-2 h-5 w-5" /> Falar com Froyd
+                  </Button>
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1 }}
+                className="mt-8 text-sm text-zinc-500"
+              >
+                Cada centavo investido aqui se transforma em inovação, performance e avanço.
+                Vamos juntos? 💡🔥
+              </motion.div>
+            </div>
+          </CardContent>
+        </Card>
+      </motion.div>
     </div>
-
-    <!-- Imagem de impacto -->
-    <div class="relative animate-fadeInUp delay-200">
-      <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=800&q=80" 
-           alt="Tech Vision" 
-           class="rounded-2xl shadow-2xl border border-purple-800 transform hover:scale-105 transition duration-500 ease-in-out">
-      <div class="absolute top-0 left-0 w-full h-full bg-black/30 rounded-2xl"></div>
-    </div>
-  </div>
-</section>
-
-<!-- Estilos e Animações -->
-<style>
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .animate-fadeInUp {
-    animation: fadeInUp 1s ease-out forwards;
-  }
-
-  .delay-200 {
-    animation-delay: 0.2s;
-  }
-
-  @keyframes growBar {
-    from { width: 0; }
-    to { width: 45%; }
-  }
-
-  .animate-growBar {
-    animation: growBar 2s ease-out forwards;
-  }
-</style>
-
-  
+  );
+}
+ 
   <footer>
     <p>&copy; 2025. Todos os direitos reservados.</p>
     <h3>Desenvolvido com visão, impacto e estratégia por <strong>Rafael Gomes Ferraz</strong>.</h3>
