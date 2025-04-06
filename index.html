@@ -267,83 +267,108 @@
 <!-- Bloco Apoie o Froyd -->
 <section style="
   font-family: 'Outfit', sans-serif;
-  background: url('https://images.unsplash.com/photo-1633158829585-23ba8f7c8b9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-  padding: 60px 20px;
+  background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  position: relative;
+  padding: 100px 20px;
   color: white;
   text-align: center;
-  border-radius: 20px;
-  position: relative;
   overflow: hidden;
+  border-radius: 20px;
   margin-top: 80px;
-  box-shadow: 0 0 40px rgba(0, 255, 231, 0.1);
+  box-shadow: 0 0 60px rgba(0, 255, 231, 0.1);
 ">
+  <!-- Overlay escuro -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+  "></div>
 
-  <!-- Imagem no topo -->
-  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Ícone Froyd" style="width: 100px; margin-bottom: 20px; animation: float 3s ease-in-out infinite;">
+  <div style="position: relative; z-index: 2;">
 
-  <h2 style="font-size: 2.8rem; margin-bottom: 10px; color: #00ffe7; text-shadow: 0 0 10px #00ffe7;">
-    Apoie o Froyd
-  </h2>
+    <!-- Frase de impacto -->
+    <p style="font-size: 1rem; color: #00ffe7; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase;">
+      🌐 A revolução digital começa com atitude
+    </p>
 
-  <p style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.6;">
-    Se você acredita em revolução digital, inovação real e quer fazer parte da história, apoie diretamente quem está construindo isso com visão, coragem e atitude.  
-  </p>
+    <!-- Imagem topo animada -->
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Ícone Froyd" style="width: 90px; margin-bottom: 20px; animation: float 3s ease-in-out infinite;">
 
-  <!-- QR Code do Nubank -->
-  <img src="qrcode_nubank.png" alt="QR Code Nubank" style="width: 180px; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 0 20px rgba(0, 255, 231, 0.4);">
+    <!-- Título principal -->
+    <h2 style="font-size: 2.8rem; margin-bottom: 10px; color: #00ffe7; text-shadow: 0 0 12px #00ffe7;">
+      Apoie o Froyd
+    </h2>
 
-  <!-- Botão de Apoiar -->
-  <div style="margin-bottom: 30px;">
-    <a href="https://nubank.com.br/pagar/xxxxxxxxx" target="_blank" style="
-      background: linear-gradient(90deg, #00ffe7, #00c2ff);
-      color: #000;
-      font-weight: 600;
-      padding: 14px 32px;
-      font-size: 1rem;
-      border-radius: 12px;
-      text-decoration: none;
-      box-shadow: 0 0 20px #00ffe7;
-      transition: all 0.3s ease;
-    " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px #00ffe7';"
-       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 20px #00ffe7';">
-      Apoiar Agora 💸
-    </a>
+    <!-- Frase persuasiva -->
+    <p style="max-width: 640px; margin: 0 auto 24px; font-size: 1.2rem; color: #ccc;">
+      Sua ajuda não é só apoio. É uma aposta em algo maior, em ideias que quebram o sistema e criam futuro.
+    </p>
+
+    <!-- QR Code -->
+    <img src="qrcode_nubank.png" alt="QR Code Nubank" style="width: 180px; border-radius: 16px; margin: 30px auto 20px; box-shadow: 0 0 25px rgba(0, 255, 231, 0.3); display: block;">
+
+    <!-- Botão Apoiar -->
+    <div style="margin: 25px 0;">
+      <a href="https://nubank.com.br/pagar/xxxxxxxxx" target="_blank" style="
+        background: linear-gradient(90deg, #00ffe7, #00c2ff);
+        color: black;
+        font-weight: 700;
+        padding: 14px 36px;
+        font-size: 1.1rem;
+        border-radius: 14px;
+        text-decoration: none;
+        box-shadow: 0 0 25px #00ffe7;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.3s ease;
+      " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px #00ffe7';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 25px #00ffe7';">
+        💸 Apoiar Agora
+      </a>
+    </div>
+
+    <!-- Selo + mini depoimento -->
+    <div style="margin-top: 10px; font-size: 0.95rem; color: #aaa;">
+      <p style="margin-bottom: 6px;">🔒 Revolução em curso — mais de <strong>250 visionários</strong> já apoiaram.</p>
+      <em>“Apoiar o Froyd é investir em liberdade, inteligência e futuro.”</em>
+    </div>
+
+    <!-- Investidor sério -->
+    <div style="margin-top: 40px;">
+      <p style="font-size: 1rem; color: #ccc; margin-bottom: 12px;">
+        Quer investir de verdade nesse movimento? Converse direto comigo:
+      </p>
+      <a href="https://wa.me/557799855333" target="_blank" style="
+        display: inline-flex;
+        align-items: center;
+        background-color: #25d366;
+        color: white;
+        padding: 12px 22px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 10px;
+        text-decoration: none;
+        box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+        transition: all 0.3s ease;
+      " onmouseover="this.style.transform='scale(1.05)';"
+         onmouseout="this.style.transform='scale(1)';">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; margin-right: 10px;">
+        Falar com o Froyd
+      </a>
+    </div>
+
   </div>
-
-  <!-- Texto de Investidor -->
-  <p style="font-size: 1rem; color: #ccc; margin-bottom: 12px;">
-    Quer fazer um <strong>investimento sério</strong> no projeto? Chame direto no WhatsApp:
-  </p>
-
-  <!-- Botão WhatsApp -->
-  <a href="https://wa.me/557799855333" target="_blank" style="
-    display: inline-flex;
-    align-items: center;
-    background-color: #25d366;
-    color: white;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  " onmouseover="this.style.backgroundColor='#1ebc5b';"
-     onmouseout="this.style.backgroundColor='#25d366';">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; margin-right: 10px;">
-    Falar com o Froyd
-  </a>
-
 </section>
 
-<!-- Efeito de flutuação para imagem -->
+<!-- Efeitos extras -->
 <style>
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
 </style>
-
-
   
   <footer>
     <p>&copy; 2025. Todos os direitos reservados.</p>
