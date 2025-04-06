@@ -261,114 +261,88 @@
     </div>
   </section>
   
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<!-- Bloco Apoie o Froyd -->
-<section style="
-  font-family: 'Outfit', sans-serif;
-  background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-  position: relative;
-  padding: 100px 20px;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  border-radius: 20px;
-  margin-top: 80px;
-  box-shadow: 0 0 60px rgba(0, 255, 231, 0.1);
-">
-  <!-- Overlay escuro -->
-  <div style="
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(4px);
-    z-index: 1;
-  "></div>
-
-  <div style="position: relative; z-index: 2;">
-
-    <!-- Frase de impacto -->
-    <p style="font-size: 1rem; color: #00ffe7; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase;">
-      🌐 A revolução digital começa com atitude
-    </p>
-
-    <!-- Imagem topo animada -->
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Ícone Froyd" style="width: 90px; margin-bottom: 20px; animation: float 3s ease-in-out infinite;">
-
-    <!-- Título principal -->
-    <h2 style="font-size: 2.8rem; margin-bottom: 10px; color: #00ffe7; text-shadow: 0 0 12px #00ffe7;">
-      Apoie o Froyd
-    </h2>
-
-    <!-- Frase persuasiva -->
-    <p style="max-width: 640px; margin: 0 auto 24px; font-size: 1.2rem; color: #ccc;">
-      Sua ajuda não é só apoio. É uma aposta em algo maior, em ideias que quebram o sistema e criam futuro.
-    </p>
-
-    <!-- QR Code -->
-    <img src="qrcode_nubank.png" alt="QR Code Nubank" style="width: 180px; border-radius: 16px; margin: 30px auto 20px; box-shadow: 0 0 25px rgba(0, 255, 231, 0.3); display: block;">
-
-    <!-- Botão Apoiar -->
-    <div style="margin: 25px 0;">
-      <a href="https://nubank.com.br/pagar/xxxxxxxxx" target="_blank" style="
-        background: linear-gradient(90deg, #00ffe7, #00c2ff);
-        color: black;
-        font-weight: 700;
-        padding: 14px 36px;
-        font-size: 1.1rem;
-        border-radius: 14px;
-        text-decoration: none;
-        box-shadow: 0 0 25px #00ffe7;
-        display: inline-flex;
-        align-items: center;
-        transition: all 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px #00ffe7';"
-         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 25px #00ffe7';">
-        💸 Apoiar Agora
-      </a>
-    </div>
-
-    <!-- Selo + mini depoimento -->
-    <div style="margin-top: 10px; font-size: 0.95rem; color: #aaa;">
-      <p style="margin-bottom: 6px;">🔒 Revolução em curso — mais de <strong>250 visionários</strong> já apoiaram.</p>
-      <em>“Apoiar o Froyd é investir em liberdade, inteligência e futuro.”</em>
-    </div>
-
-    <!-- Investidor sério -->
-    <div style="margin-top: 40px;">
-      <p style="font-size: 1rem; color: #ccc; margin-bottom: 12px;">
-        Quer investir de verdade nesse movimento? Converse direto comigo:
+<!-- Apoie o Froyd -->
+<section class="bg-[#0e0e0e] text-white px-6 py-20 sm:py-24" id="apoie">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texto + QR + Botão -->
+    <div class="space-y-6 animate-fadeInUp">
+      <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight text-purple-500">⚡ Invista no Futuro com Froyd</h2>
+      <p class="text-lg text-gray-300">
+        VibEazy, Nexus Group e toda a revolução que estamos criando precisa de visão. Seu apoio não é só uma doação — é um voto de confiança em algo maior, sério e estratégico.
       </p>
-      <a href="https://wa.me/557799855333" target="_blank" style="
-        display: inline-flex;
-        align-items: center;
-        background-color: #25d366;
-        color: white;
-        padding: 12px 22px;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 10px;
-        text-decoration: none;
-        box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
-        transition: all 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)';"
-         onmouseout="this.style.transform='scale(1)';">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; margin-right: 10px;">
-        Falar com o Froyd
-      </a>
+      <p class="text-gray-400">
+        Você pode ajudar a alavancar esse movimento. Cada apoio é um tijolo nessa construção.
+      </p>
+
+      <!-- QR e botão -->
+      <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+        <img src="https://i.imgur.com/ABWw8uG.png" alt="QR Code Nubank" class="w-40 h-40 rounded-xl shadow-lg border border-purple-500">
+        <a href="https://nubank.com.br/pagar/1l8sb/6LNk7S4vGc" target="_blank" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 text-center w-fit animate-pulse">
+          Apoiar Agora 💜
+        </a>
+      </div>
+
+      <!-- Barra de progresso (meta) -->
+      <div class="mt-8">
+        <h3 class="text-md text-gray-300 mb-2">🎯 Meta atual: Comprar um PC novo (R$5.000)</h3>
+        <div class="w-full bg-gray-700 rounded-full h-6 overflow-hidden shadow-inner">
+          <div class="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-600 h-full text-right pr-3 text-sm font-bold text-white flex items-center justify-end animate-growBar" style="width: 45%;">R$2.250</div>
+        </div>
+        <p class="text-sm text-gray-500 mt-1 italic">Progresso visual (atualizado manualmente)</p>
+      </div>
+
+      <!-- Contador fake de apoiadores -->
+      <div class="mt-6 text-sm text-gray-400">
+        <span class="text-purple-400 font-semibold">🌟 128 apoiadores</span> já fizeram parte disso.
+      </div>
+
+      <!-- Contato para investidores -->
+      <div class="pt-6 border-t border-gray-700 mt-6 text-gray-400">
+        <p class="text-sm">
+          💼 Investidor sério? Fale direto comigo:
+          <a href="https://wa.me/557799855333" target="_blank" class="text-purple-400 hover:underline font-medium">
+            +55 77 9985-5333 (WhatsApp)
+          </a>
+        </p>
+      </div>
     </div>
 
+    <!-- Imagem de impacto -->
+    <div class="relative animate-fadeInUp delay-200">
+      <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=800&q=80" 
+           alt="Tech Vision" 
+           class="rounded-2xl shadow-2xl border border-purple-800 transform hover:scale-105 transition duration-500 ease-in-out">
+      <div class="absolute top-0 left-0 w-full h-full bg-black/30 rounded-2xl"></div>
+    </div>
   </div>
 </section>
 
-<!-- Efeitos extras -->
+<!-- Estilos e Animações -->
 <style>
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes growBar {
+    from { width: 0; }
+    to { width: 45%; }
+  }
+
+  .animate-growBar {
+    animation: growBar 2s ease-out forwards;
+  }
 </style>
+
   
   <footer>
     <p>&copy; 2025. Todos os direitos reservados.</p>
