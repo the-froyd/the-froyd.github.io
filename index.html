@@ -9,6 +9,8 @@
   <meta name="author" content="Rafael Gomes Ferraz">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -27,6 +29,20 @@
       text-align: center;
       padding: 60px 20px 20px;
       background-color: #0b0b0b;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00ffe7;
+      text-shadow: 0 0 20px rgba(0, 255, 200, 0.7);
+    }
+
+    header .icon {
+      font-size: 3rem;
+      color: #00ffe7;
+      margin: 0 10px;
     }
 
     header img {
@@ -35,6 +51,11 @@
       object-fit: cover;
       border-radius: 12px;
       box-shadow: 0 0 50px rgba(0, 255, 200, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
     }
 
     .frase-impacto {
@@ -47,6 +68,10 @@
       display: inline-block;
       border-radius: 10px;
       box-shadow: 0 0 30px rgba(0,255,231,0.2);
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     section {
@@ -54,6 +79,7 @@
       margin: auto;
       padding: 60px 20px;
       border-bottom: 1px solid #222;
+      text-align: center;
     }
 
     section h2 {
@@ -62,6 +88,19 @@
       margin-bottom: 25px;
       font-family: 'Orbitron', sans-serif;
       text-align: center;
+      position: relative;
+      display: inline-block;
+    }
+
+    section h2::after {
+      content: '';
+      width: 50px;
+      height: 5px;
+      background-color: #00ffe7;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     section p {
@@ -218,21 +257,22 @@
 </head>
 <body>
   <header>
+    <h1><i class="fas fa-code icon"></i> The Froyd <i class="fas fa-code icon"></i></h1>
     <img src="FROYDb.jpg" alt="Froyd Banner" />
     <div class="frase-impacto">Das pessoas de quem menos se espera, nascem os feitos que ninguém imagina.</div>
   </header>
 
-  <section>
+  <section data-aos="fade-up">
     <h2>Quem é The Froyd?</h2>
     <p>Profissional certificado em Comunicação, com base sólida em Administração, Gestão de Projetos, Design Gráfico e atualmente estudando Programação Web, Mobile e Back-End. The Froyd é uma figura que une estratégia e execução com estética e impacto. Líder de projetos como o VibEazy Online e Nexus Group, Froyd aplica seus conhecimentos para criar ecossistemas digitais lucrativos, funcionais e inovadores.</p>
     <p>Com visão empreendedora desde cedo, Rafael Gomes Ferraz (Froyd) busca sempre antecipar tendências, profissionalizar o cenário e construir legado com seriedade e influência. O que começa como ideia em sua mente, se transforma em realidade digital com impacto real no mercado.</p>
     <div style="text-align:center;">
-      <a href="#vibeazy" class="btn">Explorar o VibEazy</a>
-      <a href="#nexus" class="btn">Ver Nexus Group</a>
+      <a href="#vibeazy" class="btn"><i class="fas fa-gamepad"></i> Explorar o VibEazy</a>
+      <a href="#nexus" class="btn"><i class="fas fa-network-wired"></i> Ver Nexus Group</a>
     </div>
   </section>
 
-  <section class="cards-container">
+  <section class="cards-container" data-aos="fade-up">
     <div class="card" id="vibeazy">
       <h2>VibEazy Online</h2>
       <p>O <strong>VibEazy Online</strong> é o servidor que redefiniu o Roleplay Mobile. Feito com base em economia realista, suporte ao Pix, eventos valendo dinheiro real, pets, rede social interna, rádio, sistema de empresas e um spawn feito especialmente para celular. Não é só mais um servidor — é uma nova geração de RP.</p>
@@ -240,7 +280,7 @@
       <div class="logo-container">
         <img src="vlogo.png" alt="Logo VibEazy Online">
       </div>
-      <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank">Jogar VibEazy</a>
+      <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank"><i class="fab fa-discord"></i> Jogar VibEazy</a>
     </div>
 
     <div class="card" id="nexus">
@@ -250,17 +290,17 @@
       <div class="logo-container">
         <img src="nlogo.png" alt="Logo Nexus Group">
       </div>
-      <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank">Entrar na Nexus</a>
+      <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank"><i class="fab fa-discord"></i> Entrar na Nexus</a>
     </div>
   </section>
 
-  <section>
+  <section data-aos="fade-up">
     <h2>Contato Profissional</h2>
     <p>Propostas comerciais, recrutamento de equipe, parcerias estratégicas ou integração de projetos? Entre em contato:</p>
     <div style="text-align:center;">
-      <button class="contact-btn" onclick="window.location.href='mailto:contatovibeazycity@gmail.com'">Email VibEazy</button>
-      <button class="contact-btn" onclick="window.location.href='mailto:contatonexusgroup@gmail.com'">Email Nexus Group</button>
-      <button class="contact-btn" onclick="window.location.href='mailto:rafaelgomesferraz0@gmail.com'">Email Pessoal</button>
+      <button class="contact-btn" onclick="window.location.href='mailto:contatovibeazycity@gmail.com'"><i class="fas fa-envelope"></i> Email VibEazy</button>
+      <button class="contact-btn" onclick="window.location.href='mailto:contatonexusgroup@gmail.com'"><i class="fas fa-envelope"></i> Email Nexus Group</button>
+      <button class="contact-btn" onclick="window.location.href='mailto:rafaelgomesferraz0@gmail.com'"><i class="fas fa-envelope"></i> Email Pessoal</button>
     </div>
   </section>
   
@@ -351,36 +391,11 @@
       <p style="font-size: 1rem; color: #ccc; margin-bottom: 12px;">
         Quer investir de verdade nesse movimento? Converse direto comigo:
       </p>
-      <a href="https://wa.me/5577998553333" target="_blank" style="
-        display: inline-flex;
-        align-items: center;
-        background-color: #25d366;
-        color: white;
-        padding: 12px 22px;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 10px;
-        text-decoration: none;
-        box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
-        transition: all 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)';"
-         onmouseout="this.style.transform='scale(1)';">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; margin-right: 10px;">
-        Falar com o Froyd
-      </a>
-    </div>
+      <a href="https://wa.me/5577998553333
 
-  </div>
-</section>
-
-<!-- Efeitos extras -->
-<style>
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-</style>
-
-  <footer>
+ <footer>
     <p>&copy; 2025. Todos os direitos reservados.</p>
-    <h3>Desenvolvido com visão,
+    <h3>Desenvolvido com visão, impacto e estratégia por <strong>Rafael Gomes Ferraz</strong>.</h3>
+  </footer>
+</body>
+</html>
