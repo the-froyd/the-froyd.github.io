@@ -21,6 +21,48 @@
       background-color: #0e0e0e;
       color: #fff;
       line-height: 1.6;
+      overflow: hidden;
+    }
+
+    .intro-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .intro-screen h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .intro-screen p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      background: #0f0;
+      color: black;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0c0;
     }
 
     header {
@@ -69,23 +111,6 @@
       color: #ddd;
       font-size: 1.1rem;
       text-align: center;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      background-color: #00ffe7;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #00bfa3;
-      color: #fff;
     }
 
     .cards-container {
@@ -217,173 +242,51 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="froydbanner.png" alt="Froyd Banner" />
-    <div class="frase-impacto">Das pessoas de quem menos se espera, nascem os feitos que ninguém imagina.</div>
-  </header>
 
-  <section>
-    <h2>Quem é The Froyd?</h2>
-    <p>Profissional certificado em Comunicação, com base sólida em Administração, Gestão de Projetos, Design Gráfico e atualmente estudando Programação Web, Mobile e Back-End. The Froyd é uma figura que une estratégia e execução com estética e impacto. Líder de projetos como o VibEazy Online e Nexus Group, Froyd aplica seus conhecimentos para criar ecossistemas digitais lucrativos, funcionais e inovadores.</p>
-    <p>Com visão empreendedora desde cedo, Rafael Gomes Ferraz (Froyd) busca sempre antecipar tendências, profissionalizar o cenário e construir legado com seriedade e influência. O que começa como ideia em sua mente, se transforma em realidade digital com impacto real no mercado.</p>
-    <div style="text-align:center;">
-      <a href="#vibeazy" class="btn">Explorar o VibEazy</a>
-      <a href="#nexus" class="btn">Ver Nexus Group</a>
-    </div>
-  </section>
-
-  <section class="cards-container">
-    <div class="card" id="vibeazy">
-      <h2>VibEazy Online</h2>
-      <p>O <strong>VibEazy Online</strong> é o servidor que redefiniu o Roleplay Mobile. Feito com base em economia realista, suporte ao Pix, eventos valendo dinheiro real, pets, rede social interna, rádio, sistema de empresas e um spawn feito especialmente para celular. Não é só mais um servidor — é uma nova geração de RP.</p>
-      <p>Com administração empresarial, equipe treinada, integração real com o mundo externo e experiência de jogo pensada desde o onboarding, o VibEazy é um ambiente onde diversão e oportunidade financeira coexistem. Simplesmente o mais profissional e avançado do SA-MP nacional.</p>
-      <div class="logo-container">
-        <img src="vlogo.png" alt="Logo VibEazy Online">
-      </div>
-      <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank">Jogar VibEazy</a>
-    </div>
-
-    <div class="card" id="nexus">
-      <h2>Nexus Group</h2>
-      <p>A <strong>Nexus Group</strong> é o coração empresarial por trás de tudo. Um hub de desenvolvedores e estrategistas digitais. Aqui nascem servidores como DayZ, FiveM, Roblox, MTA, Minecraft — todos com base em estrutura, marketing e branding profissional. A Nexus é onde talento e visão se encontram.</p>
-      <p>Com braços como a <strong>Horyzon Store</strong> (mods e serviços digitais) e a <strong>Duran Host</strong> (hospedagem de servidores), a Nexus não é só uma equipe — é um império digital em expansão.</p>
-      <div class="logo-container">
-        <img src="nlogo.png" alt="Logo Nexus Group">
-      </div>
-      <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank">Entrar na Nexus</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contato Profissional</h2>
-    <p>Propostas comerciais, recrutamento de equipe, parcerias estratégicas ou integração de projetos? Entre em contato:</p>
-    <div style="text-align:center;">
-      <button class="contact-btn" onclick="window.location.href='mailto:contatovibeazycity@gmail.com'">Email VibEazy</button>
-      <button class="contact-btn" onclick="window.location.href='mailto:contatonexusgroup@gmail.com'">Email Nexus Group</button>
-      <button class="contact-btn" onclick="window.location.href='mailto:rafaelgomesferraz0@gmail.com'">Email Pessoal</button>
-    </div>
-  </section>
-  
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<!-- Bloco Apoie o Froyd -->
-<section style="
-  font-family: 'Outfit', sans-serif;
-  background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-  position: relative;
-  padding: 100px 20px;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  border-radius: 20px;
-  margin-top: 80px;
-  box-shadow: 0 0 60px rgba(0, 255, 231, 0.1);
-">
-  <!-- Overlay escuro -->
-  <div style="
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(4px);
-    z-index: 1;
-  "></div>
-
-  <div style="position: relative; z-index: 2;">
-
-    <!-- Frase de impacto -->
-    <p style="font-size: 1rem; color: #00ffe7; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase;">
-      🌐 A revolução digital começa com atitude
-    </p>
-
-    <!-- Imagem topo animada -->
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Ícone Froyd" style="width: 90px; margin-bottom: 20px; animation: float 3s ease-in-out infinite;">
-
-    <!-- Título principal -->
-    <h2 style="font-size: 2.8rem; margin-bottom: 10px; color: #00ffe7; text-shadow: 0 0 12px #00ffe7;">
-      Apoie Rafael
-    </h2>
-
-    <!-- Frase persuasiva -->
-    <p style="max-width: 640px; margin: 0 auto 24px; font-size: 1.2rem; color: #ccc;">
-      Sua ajuda é crucial para tirar essa revolução do papel. Meu computador atual está travando demais — o objetivo é arrecadar R$5.000 para comprar um novo e continuar produzindo conteúdo, ideias e sistemas de alto nível.
-    </p>
-
-    <!-- Barra de Progresso -->
-    <div style="max-width: 480px; margin: 40px auto 10px; text-align: left;">
-      <p style="margin-bottom: 6px; font-weight: 600; color: #00ffe7;">Progresso: R$112 de R$5.000</p>
-      <div style="background-color: #222; border-radius: 12px; overflow: hidden; height: 20px; box-shadow: 0 0 8px rgba(0,255,231,0.2);">
-        <div style="width: 2.24%; height: 100%; background: linear-gradient(90deg, #00ffe7, #00c2ff); transition: width 0.4s;"></div>
-      </div>
-    </div>
-
-    <!-- QR Code -->
-    <img src="qrcode_nubank.png" alt="QR Code Nubank" style="width: 180px; border-radius: 16px; margin: 30px auto 20px; box-shadow: 0 0 25px rgba(0, 255, 231, 0.3); display: block;">
-
-    <!-- Botão Apoiar -->
-    <div style="margin: 25px 0;">
-      <a href="https://nubank.com.br/cobrar/d0kqc/67f1ed61-1e18-4e2f-8c73-cddaa56efa3a" target="_blank" style="
-        background: linear-gradient(90deg, #00ffe7, #00c2ff);
-        color: black;
-        font-weight: 700;
-        padding: 14px 36px;
-        font-size: 1.1rem;
-        border-radius: 14px;
-        text-decoration: none;
-        box-shadow: 0 0 25px #00ffe7;
-        display: inline-flex;
-        align-items: center;
-        transition: all 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px #00ffe7';"
-         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 25px #00ffe7';">
-        💸 Apoiar Agora
-      </a>
-    </div>
-
-    <!-- Selo + mini depoimento -->
-    <div style="margin-top: 10px; font-size: 0.95rem; color: #aaa;">
-      <p style="margin-bottom: 6px;">🔒 Revolução em curso — <strong>3 pessoas</strong> já apoiaram.</p>
-      <em>“Apoiar o Froyd é investir em liberdade, inteligência e futuro.”</em>
-    </div>
-
-    <!-- Investidor sério -->
-    <div style="margin-top: 40px;">
-      <p style="font-size: 1rem; color: #ccc; margin-bottom: 12px;">
-        Quer investir de verdade nesse movimento? Converse direto comigo:
-      </p>
-      <a href="https://wa.me/5577998553333" target="_blank" style="
-        display: inline-flex;
-        align-items: center;
-        background-color: #25d366;
-        color: white;
-        padding: 12px 22px;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 10px;
-        text-decoration: none;
-        box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
-        transition: all 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.05)';"
-         onmouseout="this.style.transform='scale(1)';">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; margin-right: 10px;">
-        Falar com Rafael
-      </a>
-    </div>
-
+  <!-- Tela de entrada -->
+  <div class="intro-screen" id="intro">
+    <h1>🎧 VibEazy City</h1>
+    <p>Clique para entrar</p>
+    <button class="btn" onclick="startSite()">Entrar no site</button>
   </div>
-</section>
 
-<!-- Efeitos extras -->
-<style>
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-</style>
+  <!-- Player YouTube oculto -->
+  <div style="display: none;">
+    <iframe id="ytplayer" width="0" height="0" frameborder="0"
+      allow="autoplay"
+      src="">
+    </iframe>
+  </div>
 
-  <footer>
-    <p>&copy; 2025. Todos os direitos reservados.</p>
-    <h3>Desenvolvido com visão, impacto e estratégia por <strong>Rafael Gomes Ferraz</strong>.</h3>
-  </footer>
+  <!-- Conteúdo principal -->
+  <div id="main-content" style="display:none;">
+    <header>
+      <img src="froydbanner.png" alt="Froyd Banner" />
+      <div class="frase-impacto">Das pessoas de quem menos se espera, nascem os feitos que ninguém imagina.</div>
+    </header>
+
+    <section>
+      <h2>Quem é The Froyd?</h2>
+      <p>Profissional certificado em Comunicação, com base sólida em Administração, Gestão de Projetos, Design Gráfico e atualmente estudando Programação Web, Mobile e Back-End. The Froyd é uma figura que une estratégia e execução com estética e impacto. Líder de projetos como o VibEazy Online e Nexus Group, Froyd aplica seus conhecimentos para criar ecossistemas digitais lucrativos, funcionais e inovadores.</p>
+      <p>Com visão empreendedora desde cedo, Rafael Gomes Ferraz (Froyd) busca sempre antecipar tendências, profissionalizar o cenário e construir legado com seriedade e influência. O que começa como ideia em sua mente, se transforma em realidade digital com impacto real no mercado.</p>
+      <div style="text-align:center;">
+        <a href="#vibeazy" class="btn">Explorar o VibEazy</a>
+        <a href="#nexus" class="btn">Ver Nexus Group</a>
+      </div>
+    </section>
+
+    <!-- Continuação do conteúdo... -->
+  </div>
+
+  <script>
+    function startSite() {
+      const player = document.getElementById("ytplayer");
+      const videoID = "zwbG1Cw2DHs";
+      player.src = `https://www.youtube-nocookie.com/embed/${videoID}?autoplay=1&mute=0&controls=0&loop=1&playlist=${videoID}`;
+      document.getElementById("intro").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+      document.body.style.overflow = "auto";
+    }
+  </script>
 </body>
 </html>
