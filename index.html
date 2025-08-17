@@ -3,217 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Froyd — O Visionário</title>
-  <meta name="description" content="Biografia oficial de Froyd — fundador do império digital VibEazy Online & Nexus Group. Onde o código encontra o domínio.">
-  <meta name="keywords" content="Froyd, VibEazy, Nexus Group, Roleplay, SA-MP, empreendedorismo">
+  <title>The Froyd — Visionário e Criador</title>
+  <meta name="description" content="Biografia completa de Froyd — fundador do império digital VibEazy Online & Nexus Group. Profissional, visionário e estrategista digital.">
+  <meta name="keywords" content="Froyd, VibEazy, Nexus Group, Roleplay, SA-MP, empreendedorismo, web, mobile, back-end">
   <meta name="author" content="Rafael Gomes Ferraz">
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 
   <style>
     :root {
-      --primary: #00ffe7;
-      --primary-dark: #00bfa3;
-      --accent-red: #ff3333;
-      --accent-blue: #00bfff;
-      --bg-dark: #0e0e0e;
-      --bg-card: #1a1a1a;
+      --primary: #6f00ff;
+      --secondary: #ff6fcf;
+      --accent: #00ffe7;
+      --bg-dark: #0f0f12;
+      --bg-card: #1c1c28;
       --text-light: #ddd;
+      --shadow: rgba(111, 0, 255, 0.3);
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body {background:var(--bg-dark);color:white;line-height:1.6;overflow-x:hidden;}
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg-dark);
-      color: white;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
+    /* Header */
+    header {position:relative;text-align:center;overflow:hidden;}
+    header img {width:100%;height:60vh;object-fit:cover;filter:brightness(0.5);}
+    .overlay {position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;padding:20px;}
+    .overlay h1 {font-family:'Orbitron',sans-serif;font-size:3rem;color:var(--primary);text-shadow:0 0 20px var(--primary);margin-bottom:15px;animation:fadeInDown 1s ease;}
+    .overlay p.frase-impacto {font-weight:600;color:var(--accent);background:rgba(0,0,0,0.6);padding:12px 20px;border-radius:12px;backdrop-filter:blur(4px);animation:fadeInUp 1s ease;}
 
-    header {
-      position: relative;
-      text-align: center;
-      padding: 0;
-      overflow: hidden;
-    }
+    /* Sections */
+    section {max-width:1200px;margin:auto;padding:80px 20px;}
+    section h2 {font-size:2.4rem;text-align:center;margin-bottom:25px;color:var(--primary);font-family:'Orbitron',sans-serif;text-transform:uppercase;letter-spacing:2px;}
+    section p {color:var(--text-light);font-size:1.1rem;margin-bottom:20px;text-align:center;}
 
-    header img {
-      width: 100%;
-      height: 60vh;
-      object-fit: cover;
-      filter: brightness(0.4);
-    }
+    /* Buttons */
+    .btn, .contact-btn {display:inline-block;margin:10px;padding:14px 28px;border-radius:12px;font-weight:600;text-decoration:none;transition:0.3s;cursor:pointer;}
+    .btn {background:linear-gradient(90deg,var(--primary),var(--secondary));color:black;box-shadow:0 0 15px var(--shadow);}
+    .btn:hover {transform:scale(1.05);background:var(--accent);color:white;}
+    .contact-btn {background:var(--accent);border:none;color:black;}
+    .contact-btn:hover {transform:scale(1.05);background:var(--primary);color:white;}
 
-    header .overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
+    /* Cards */
+    .cards-container {display:grid;grid-template-columns:1fr;gap:40px;margin-top:40px;}
+    .card {background:var(--bg-card);padding:40px;border-radius:20px;box-shadow:0 0 30px var(--shadow);transition:0.3s;text-align:center;position:relative;overflow:hidden;}
+    .card::before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(120deg,var(--primary),var(--secondary),var(--accent));opacity:0.05;pointer-events:none;}
+    .card:hover {transform:translateY(-10px);box-shadow:0 0 50px var(--shadow);}
+    .logo-container img {width:160px;margin:20px auto;}
 
-    .overlay h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: var(--primary);
-      text-shadow: 0 0 20px var(--primary);
-      margin-bottom: 20px;
-      animation: fadeInDown 1.2s ease;
-    }
+    /* Vaquinha */
+    .donation {position:relative;background:linear-gradient(180deg,var(--primary),var(--secondary));border-radius:20px;padding:60px 20px;text-align:center;color:white;margin-top:60px;overflow:hidden;}
+    .donation::before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);}
+    .donation-content {position:relative;z-index:2;}
+    .donation h2 {font-size:2.6rem;margin-bottom:15px;color:white;text-shadow:0 0 10px var(--accent);}
+    .donation p {font-size:1.2rem;max-width:700px;margin:0 auto 25px;}
+    .progress-bar {background:#222;border-radius:12px;overflow:hidden;height:24px;box-shadow:0 0 10px var(--accent);margin:20px auto;width:90%;}
+    .progress-fill {height:100%;width:2%;background:linear-gradient(90deg,var(--accent),var(--secondary));transition:width 0.5s;}
 
-    .frase-impacto {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: white;
-      background: rgba(0,0,0,0.6);
-      padding: 12px 20px;
-      border-radius: 12px;
-      backdrop-filter: blur(5px);
-      animation: fadeInUp 1.2s ease;
-    }
+    /* Social Icons */
+    .socials {display:flex;justify-content:center;gap:25px;margin-top:20px;}
+    .socials a {color:var(--accent);font-size:1.5rem;transition:0.3s;}
+    .socials a:hover {color:var(--secondary);transform:scale(1.2);}
 
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 80px 20px;
-      border-bottom: 1px solid #222;
-    }
+    footer {background:#000;text-align:center;padding:40px 20px;color:#aaa;}
+    footer strong {color:var(--accent);}
 
-    section h2 {
-      font-size: 2.4rem;
-      text-align: center;
-      margin-bottom: 25px;
-      color: var(--primary);
-      font-family: 'Orbitron', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
+    @media(min-width:768px){.cards-container{grid-template-columns:1fr 1fr;} section p{text-align:justify;}}
 
-    section p {
-      color: var(--text-light);
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 28px;
-      background: linear-gradient(90deg, var(--primary), #00c2ff);
-      color: black;
-      font-weight: bold;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: 0.3s;
-      box-shadow: 0 0 15px var(--primary);
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      background: var(--primary-dark);
-      color: white;
-    }
-
-    .cards-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 255, 231, 0.15);
-      transition: 0.3s ease;
-      text-align: center;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 50px rgba(0, 255, 231, 0.4);
-    }
-
-    #vibeazy { background: linear-gradient(180deg, #1e0000, #0e0e0e); }
-    #nexus { background: linear-gradient(180deg, #00111a, #0e0e0e); }
-
-    .logo-container img {
-      width: 160px;
-      margin: 20px auto;
-    }
-
-    .contact-btn {
-      background: var(--primary);
-      border: none;
-      color: black;
-      padding: 12px 26px;
-      margin: 10px;
-      font-weight: 600;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .contact-btn:hover {
-      background: var(--primary-dark);
-      color: white;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 40px 20px;
-      color: #aaa;
-    }
-
-    footer strong {
-      color: var(--primary);
-    }
-
-    @media(min-width: 768px) {
-      .cards-container {
-        grid-template-columns: 1fr 1fr;
-      }
-      section p { text-align: justify; }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    @keyframes fadeInDown{from{opacity:0;transform:translateY(-40px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
   </style>
 </head>
 <body>
+
   <header>
     <img src="froydbanner.png" alt="Froyd Banner" />
     <div class="overlay">
-      <h1>The Froyd — O Visionário</h1>
-      <div class="frase-impacto">Das pessoas de quem menos se espera, nascem os feitos que ninguém imagina.</div>
+      <h1>The Froyd — Visionário</h1>
+      <p class="frase-impacto">Das pessoas de quem menos se espera, nascem os feitos que ninguém imagina.</p>
     </div>
   </header>
 
   <section>
     <h2>Quem é The Froyd?</h2>
-    <p>Profissional certificado em Comunicação, com base sólida em Administração, Gestão de Projetos, Design Gráfico e atualmente estudando Programação Web, Mobile e Back-End. The Froyd é uma figura que une estratégia e execução com estética e impacto.</p>
-    <p>Líder de projetos como o VibEazy Online e Nexus Group, Froyd aplica seus conhecimentos para criar ecossistemas digitais lucrativos, funcionais e inovadores.</p>
+    <p>Rafael Gomes Ferraz (Froyd), 20 anos, é um estrategista digital com base sólida em Comunicação, Administração, Design e Programação Web & Mobile. Fundador do VibEazy Online & Nexus Group, ele transforma ideias em ecossistemas digitais impactantes.</p>
+    <p>Com visão empreendedora e busca incessante por inovação, Froyd profissionaliza mercados, cria projetos únicos e lidera com influência e autoridade.</p>
     <div style="text-align:center;">
       <a href="#vibeazy" class="btn">Explorar o VibEazy</a>
       <a href="#nexus" class="btn">Ver Nexus Group</a>
@@ -223,36 +98,70 @@
   <section class="cards-container">
     <div class="card" id="vibeazy">
       <h2>VibEazy Online</h2>
-      <p>O <strong>VibEazy Online</strong> é o servidor que redefiniu o Roleplay Mobile. Economia realista, Pix, eventos valendo dinheiro real, pets, rede social interna, rádio, sistema de empresas e spawn otimizado para celular.</p>
-      <div class="logo-container">
-        <img src="vlogo.png" alt="Logo VibEazy Online">
-      </div>
+      <p>Servidor que redefiniu o Roleplay Mobile: economia realista, Pix, eventos valendo dinheiro real, pets, rede social interna, rádio, sistema de empresas e spawn otimizado para celular.</p>
+      <div class="logo-container"><img src="vlogo.png" alt="Logo VibEazy Online"></div>
       <a href="https://discord.gg/k9fmTJr7HD" class="btn" target="_blank">Jogar VibEazy</a>
     </div>
 
     <div class="card" id="nexus">
       <h2>Nexus Group</h2>
-      <p>A <strong>Nexus Group</strong> é o hub de desenvolvedores e estrategistas digitais. Aqui nascem servidores como DayZ, FiveM, Roblox, MTA, Minecraft — todos estruturados com branding e marketing profissional.</p>
-      <div class="logo-container">
-        <img src="nlogo.png" alt="Logo Nexus Group">
-      </div>
+      <p>Hub de desenvolvedores e estrategistas digitais. Produz servidores como DayZ, FiveM, Roblox, MTA, Minecraft, além de serviços digitais com Horyzon Store e Duran Host. Nexus é talento + visão + estrutura.</p>
+      <div class="logo-container"><img src="nlogo.png" alt="Logo Nexus Group"></div>
       <a href="https://discord.gg/YXvX62YzGQ" class="btn" target="_blank">Entrar na Nexus</a>
     </div>
   </section>
 
+  <section class="donation">
+    <div class="donation-content">
+      <h2>🌐 Apoie Rafael</h2>
+      <p>Meu objetivo é arrecadar R$5.000 para comprar um novo computador e continuar produzindo conteúdo, ideias e sistemas de alto nível.</p>
+      <div class="progress-bar"><div class="progress-fill" style="width:2.24%;"></div></div>
+      <img src="qrcode_nubank.png" alt="QR Code Nubank" style="width:180px;margin:25px auto 20px;display:block;border-radius:16px;box-shadow:0 0 25px var(--accent);">
+      <a href="https://nubank.com.br/cobrar/d0kqc/67f1ed61-1e18-4e2f-8c73-cddaa56efa3a" target="_blank" class="btn">💸 Apoiar Agora</a>
+      <p style="margin-top:15px;font-size:0.95rem;color:#ccc;">🔒 Revolução em curso — <strong>3 pessoas</strong> já apoiaram.</p>
+      <em>“Apoiar o Froyd é investir em liberdade, inteligência e futuro.”</em>
+      <div class="socials">
+        <a href="https://instagram.com/gf.rafes" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://discord.gg/k9fmTJr7HD" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="mailto:rafaelgomesferraz0@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sonhos e Visão</h2>
+    <p>Froyd, 20 anos, tem como objetivo criar ecossistemas digitais que transformem a forma como jogadores e desenvolvedores interagem. Sua visão: tornar o VibEazy Online e a Nexus Group referências mundiais, com inovação, profissionalismo e liberdade de criação.</p>
+    <p>Planeja expansão para DayZ, PvP, MTA, Minecraft, Roblox e além, mantendo um hub de desenvolvedores forte e inovador, com oportunidades de monetização real para todos os envolvidos.</p>
+  </section>
+
   <section>
     <h2>Contato Profissional</h2>
-    <p>Parcerias, negócios ou recrutamento? Entre em contato:</p>
+    <p>Propostas comerciais, recrutamento de equipe, parcerias estratégicas ou integração de projetos? Entre em contato diretamente com Froyd:</p>
     <div style="text-align:center;">
       <button class="contact-btn" onclick="window.location.href='mailto:contatovibeazycity@gmail.com'">Email VibEazy</button>
       <button class="contact-btn" onclick="window.location.href='mailto:contatonexusgroup@gmail.com'">Email Nexus Group</button>
       <button class="contact-btn" onclick="window.location.href='mailto:rafaelgomesferraz0@gmail.com'">Email Pessoal</button>
+      <a href="https://wa.me/5577998553333" target="_blank" class="contact-btn" style="background-color:#25d366;color:white;">WhatsApp</a>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025. Todos os direitos reservados.</p>
-    <h3>Desenvolvido com visão e estratégia por <strong>Rafael Gomes Ferraz</strong>.</h3>
+    <h3>Desenvolvido com visão, impacto e estratégia por <strong>Rafael Gomes Ferraz</strong>.</h3>
   </footer>
+
+  <script>
+    // Simula atualização da barra de progresso da vaquinha
+    const progressFill = document.querySelector('.progress-fill');
+    let progress = 2.24;
+    function updateProgress(target) {
+      let interval = setInterval(()=>{
+        if(progress >= target){clearInterval(interval);} 
+        else {progress += 0.1; progressFill.style.width = progress + '%';}
+      },20);
+    }
+    updateProgress(2.24);
+  </script>
+
 </body>
 </html>
